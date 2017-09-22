@@ -28,6 +28,7 @@
 		286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */; };
 		286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87ED1F73ADBE0022825D /* TFTabBarController.m */; };
 		5890CD85CC7CF90F8DA26B65 /* libPods-TianFeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */; };
+		9EEA08CD1F75127300B469F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08BF1F74EC9500B469F3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,10 +135,10 @@
 				284CAF4D1F7366BF0007A184 /* PodsHeaders.h */,
 				284CAF5E1F7366BF0007A184 /* Additions */,
 				284CAF3F1F7366BE0007A184 /* Categories */,
-				284CAF6A1F7366BF0007A184 /* Components */,
+				9EEA08CA1F750CA500B469F3 /* Components */,
 				284CAF651F7366BF0007A184 /* SubClasses */,
 				284CAF4E1F7366BF0007A184 /* Utility */,
-				284CAF751F7366C00007A184 /* ViewControllers */,
+				9EEA08CC1F750CC800B469F3 /* ViewControllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -211,20 +212,6 @@
 				286A87E51F73A9B50022825D /* TFNavigationController.m */,
 			);
 			path = SubClasses;
-			sourceTree = "<group>";
-		};
-		284CAF6A1F7366BF0007A184 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		284CAF751F7366C00007A184 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		284CAF861F7369C50007A184 /* Main */ = {
@@ -325,6 +312,20 @@
 				9EEA08BF1F74EC9500B469F3 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EEA08CA1F750CA500B469F3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9EEA08CC1F750CC800B469F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C9020B8E55FD33289F1CAA83 /* Frameworks */ = {
@@ -460,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEA08CD1F75127300B469F3 /* main.m in Sources */,
 				281E158A1F73C48100734744 /* SingletonDemo.m in Sources */,
 				281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */,
 				281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */,
@@ -602,7 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TianFeng/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -621,7 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TianFeng/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
