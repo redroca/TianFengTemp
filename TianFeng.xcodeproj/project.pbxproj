@@ -13,7 +13,6 @@
 		281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF431F7366BE0007A184 /* UIImageView+Networking.m */; };
 		281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF501F7366BF0007A184 /* MCAuthorizationManager.m */; };
 		281E158A1F73C48100734744 /* SingletonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEF81F7361E90007A184 /* SingletonDemo.m */; };
-		281E158B1F73C50C00734744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF321F7366590007A184 /* main.m */; };
 		284CAEDC1F735D770007A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEDB1F735D770007A184 /* AppDelegate.m */; };
 		284CAEE41F735D770007A184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284CAEE31F735D770007A184 /* Assets.xcassets */; };
 		286A87CE1F73A44B0022825D /* TFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87CC1F73A44B0022825D /* TFHomeViewController.m */; };
@@ -40,10 +39,6 @@
 		284CAEF61F7361E90007A184 /* BaseAPIURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAPIURL.h; sourceTree = "<group>"; };
 		284CAEF71F7361E90007A184 /* SingletonDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonDemo.h; sourceTree = "<group>"; };
 		284CAEF81F7361E90007A184 /* SingletonDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonDemo.m; sourceTree = "<group>"; };
-		284CAF311F7366590007A184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TianFeng/Info.plist; sourceTree = SOURCE_ROOT; };
-		284CAF321F7366590007A184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TianFeng/main.m; sourceTree = SOURCE_ROOT; };
-		284CAF351F7366590007A184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		284CAF361F73665A0007A184 /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CodeStyle.txt; path = TianFeng/CodeStyle.txt; sourceTree = SOURCE_ROOT; };
 		284CAF3E1F7366BE0007A184 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		284CAF421F7366BE0007A184 /* UIImageView+Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Networking.h"; sourceTree = "<group>"; };
 		284CAF431F7366BE0007A184 /* UIImageView+Networking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Networking.m"; sourceTree = "<group>"; };
@@ -78,6 +73,10 @@
 		286A87ED1F73ADBE0022825D /* TFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFTabBarController.m; sourceTree = "<group>"; };
 		896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.release.xcconfig"; sourceTree = "<group>"; };
 		907D2E25F1F347A7E7E93640 /* Pods-TianFeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.debug.xcconfig"; sourceTree = "<group>"; };
+		9EEA08BC1F74EC9500B469F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EEA08BD1F74EC9500B469F3 /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeStyle.txt; sourceTree = "<group>"; };
+		9EEA08BE1F74EC9500B469F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA08BF1F74EC9500B469F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,21 +116,14 @@
 				284CAEDB1F735D770007A184 /* AppDelegate.m */,
 				284CAEF11F7361E80007A184 /* Common */,
 				284CAEF91F7361E90007A184 /* Controller */,
-				284CAEF21F7361E80007A184 /* Model */,
+				9EEA08B91F74EC6F00B469F3 /* Model */,
 				284CAEF41F7361E90007A184 /* RESTfulAPI */,
-				284CAEF31F7361E90007A184 /* VendorAPI */,
-				284CAEF01F7361E80007A184 /* View */,
+				9EEA08B71F74EC4000B469F3 /* VendorAPI */,
+				9EEA08B81F74EC5500B469F3 /* View */,
 				284CAF2D1F7362480007A184 /* Resource */,
-				284CAF2F1F7365FC0007A184 /* Supporting Files */,
+				9EEA08BA1F74EC9500B469F3 /* Supporting Files */,
 			);
 			path = TianFeng;
-			sourceTree = "<group>";
-		};
-		284CAEF01F7361E80007A184 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		284CAEF11F7361E80007A184 /* Common */ = {
@@ -148,20 +140,6 @@
 				284CAF751F7366C00007A184 /* ViewControllers */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		284CAEF21F7361E80007A184 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		284CAEF31F7361E90007A184 /* VendorAPI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VendorAPI;
 			sourceTree = "<group>";
 		};
 		284CAEF41F7361E90007A184 /* RESTfulAPI */ = {
@@ -194,26 +172,6 @@
 			);
 			path = Resource;
 			sourceTree = "<group>";
-		};
-		284CAF2F1F7365FC0007A184 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				284CAF331F7366590007A184 /* Base.lproj */,
-				284CAF361F73665A0007A184 /* CodeStyle.txt */,
-				284CAF311F7366590007A184 /* Info.plist */,
-				284CAF321F7366590007A184 /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		284CAF331F7366590007A184 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				284CAF341F7366590007A184 /* LaunchScreen.storyboard */,
-			);
-			name = Base.lproj;
-			path = TianFeng/Base.lproj;
-			sourceTree = SOURCE_ROOT;
 		};
 		284CAF3F1F7366BE0007A184 /* Categories */ = {
 			isa = PBXGroup;
@@ -335,6 +293,38 @@
 				896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EEA08B71F74EC4000B469F3 /* VendorAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VendorAPI;
+			sourceTree = "<group>";
+		};
+		9EEA08B81F74EC5500B469F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EEA08B91F74EC6F00B469F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EEA08BA1F74EC9500B469F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA08BB1F74EC9500B469F3 /* LaunchScreen.storyboard */,
+				9EEA08BD1F74EC9500B469F3 /* CodeStyle.txt */,
+				9EEA08BE1F74EC9500B469F3 /* Info.plist */,
+				9EEA08BF1F74EC9500B469F3 /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C9020B8E55FD33289F1CAA83 /* Frameworks */ = {
@@ -470,7 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281E158B1F73C50C00734744 /* main.m in Sources */,
 				281E158A1F73C48100734744 /* SingletonDemo.m in Sources */,
 				281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */,
 				281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */,
@@ -491,10 +480,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		284CAF341F7366590007A184 /* LaunchScreen.storyboard */ = {
+		9EEA08BB1F74EC9500B469F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				284CAF351F7366590007A184 /* Base */,
+				9EEA08BC1F74EC9500B469F3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
