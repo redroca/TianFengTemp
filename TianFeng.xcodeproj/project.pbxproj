@@ -27,6 +27,7 @@
 		286A87EA1F73AB2A0022825D /* TFCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87E81F73AB2A0022825D /* TFCategoryViewController.m */; };
 		286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */; };
 		286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87ED1F73ADBE0022825D /* TFTabBarController.m */; };
+		28ABEE6D1F75142800A5BC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABEE6A1F7512DF00A5BC0E /* main.m */; };
 		5890CD85CC7CF90F8DA26B65 /* libPods-TianFeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */; };
 		9EEA08CD1F75127300B469F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08BF1F74EC9500B469F3 /* main.m */; };
 /* End PBXBuildFile section */
@@ -72,12 +73,12 @@
 		286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFCategoryViewController.xib; sourceTree = "<group>"; };
 		286A87EC1F73ADBE0022825D /* TFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFTabBarController.h; sourceTree = "<group>"; };
 		286A87ED1F73ADBE0022825D /* TFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFTabBarController.m; sourceTree = "<group>"; };
+		28ABEE691F7512DF00A5BC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TianFeng/Info.plist; sourceTree = SOURCE_ROOT; };
+		28ABEE6A1F7512DF00A5BC0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TianFeng/main.m; sourceTree = SOURCE_ROOT; };
+		28ABEE6B1F7512DF00A5BC0E /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CodeStyle.txt; path = TianFeng/CodeStyle.txt; sourceTree = SOURCE_ROOT; };
+		28ABEE6C1F7512E000A5BC0E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TianFeng/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.release.xcconfig"; sourceTree = "<group>"; };
 		907D2E25F1F347A7E7E93640 /* Pods-TianFeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.debug.xcconfig"; sourceTree = "<group>"; };
-		9EEA08BC1F74EC9500B469F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9EEA08BD1F74EC9500B469F3 /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeStyle.txt; sourceTree = "<group>"; };
-		9EEA08BE1F74EC9500B469F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EEA08BF1F74EC9500B469F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +123,7 @@
 				9EEA08B71F74EC4000B469F3 /* VendorAPI */,
 				9EEA08B81F74EC5500B469F3 /* View */,
 				284CAF2D1F7362480007A184 /* Resource */,
-				9EEA08BA1F74EC9500B469F3 /* Supporting Files */,
+				28ABEE681F7512B000A5BC0E /* Supporting File */,
 			);
 			path = TianFeng;
 			sourceTree = "<group>";
@@ -273,6 +274,17 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		28ABEE681F7512B000A5BC0E /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				28ABEE6B1F7512DF00A5BC0E /* CodeStyle.txt */,
+				28ABEE691F7512DF00A5BC0E /* Info.plist */,
+				28ABEE6C1F7512E000A5BC0E /* LaunchScreen.storyboard */,
+				28ABEE6A1F7512DF00A5BC0E /* main.m */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
 		767E1B52313EAB0C0C6B4835 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,31 +313,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9EEA08BA1F74EC9500B469F3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9EEA08BB1F74EC9500B469F3 /* LaunchScreen.storyboard */,
-				9EEA08BD1F74EC9500B469F3 /* CodeStyle.txt */,
-				9EEA08BE1F74EC9500B469F3 /* Info.plist */,
-				9EEA08BF1F74EC9500B469F3 /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9EEA08CA1F750CA500B469F3 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		9EEA08CC1F750CC800B469F3 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C9020B8E55FD33289F1CAA83 /* Frameworks */ = {
@@ -370,7 +357,7 @@
 				TargetAttributes = {
 					284CAED61F735D770007A184 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -461,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EEA08CD1F75127300B469F3 /* main.m in Sources */,
+				28ABEE6D1F75142800A5BC0E /* main.m in Sources */,
 				281E158A1F73C48100734744 /* SingletonDemo.m in Sources */,
 				281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */,
 				281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */,
@@ -480,17 +467,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9EEA08BB1F74EC9500B469F3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EEA08BC1F74EC9500B469F3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		284CAEEB1F735D770007A184 /* Debug */ = {
@@ -602,9 +578,10 @@
 			baseConfigurationReference = 907D2E25F1F347A7E7E93640 /* Pods-TianFeng.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Supporting Files/Info.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX73XRL87F;
+				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -621,9 +598,10 @@
 			baseConfigurationReference = 896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Supporting Files/Info.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX73XRL87F;
+				INFOPLIST_FILE = "$(SRCROOT)/TianFeng/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
