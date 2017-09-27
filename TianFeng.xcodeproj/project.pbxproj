@@ -23,6 +23,8 @@
 		281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF431F7366BE0007A184 /* UIImageView+Networking.m */; };
 		281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF501F7366BF0007A184 /* MCAuthorizationManager.m */; };
 		281E158A1F73C48100734744 /* SingletonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEF81F7361E90007A184 /* SingletonDemo.m */; };
+		2833F1771F7B8F600022EF4A /* TFCycleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2833F1761F7B8F0E0022EF4A /* TFCycleBannerView.m */; };
+		2833F17A1F7B91350022EF4A /* TFPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2833F1781F7B91350022EF4A /* TFPageControl.m */; };
 		283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */; };
 		284CAEDC1F735D770007A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEDB1F735D770007A184 /* AppDelegate.m */; };
 		284CAEE41F735D770007A184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284CAEE31F735D770007A184 /* Assets.xcassets */; };
@@ -73,6 +75,10 @@
 		281686AC1F789CC0004126C3 /* TFRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRoomViewController.h; sourceTree = "<group>"; };
 		281686AD1F789CC0004126C3 /* TFRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRoomViewController.m; sourceTree = "<group>"; };
 		281686AE1F789CC0004126C3 /* TFRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRoomViewController.xib; sourceTree = "<group>"; };
+		2833F1751F7B8F0E0022EF4A /* TFCycleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFCycleBannerView.h; sourceTree = "<group>"; };
+		2833F1761F7B8F0E0022EF4A /* TFCycleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFCycleBannerView.m; sourceTree = "<group>"; };
+		2833F1781F7B91350022EF4A /* TFPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPageControl.m; sourceTree = "<group>"; };
+		2833F1791F7B91350022EF4A /* TFPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFPageControl.h; sourceTree = "<group>"; };
 		283C99B91F78E78C00EDD8B5 /* TFNavigationBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFNavigationBarManager.h; sourceTree = "<group>"; };
 		283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNavigationBarManager.m; sourceTree = "<group>"; };
 		283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingHeaderView.m; sourceTree = "<group>"; };
@@ -160,6 +166,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2833F1741F7B8EEA0022EF4A /* BannerView */ = {
+			isa = PBXGroup;
+			children = (
+				2833F1791F7B91350022EF4A /* TFPageControl.h */,
+				2833F1781F7B91350022EF4A /* TFPageControl.m */,
+				2833F1751F7B8F0E0022EF4A /* TFCycleBannerView.h */,
+				2833F1761F7B8F0E0022EF4A /* TFCycleBannerView.m */,
+			);
+			path = BannerView;
+			sourceTree = "<group>";
+		};
 		284CAECE1F735D770007A184 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +378,7 @@
 		28583E091F7B590600116294 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2833F1741F7B8EEA0022EF4A /* BannerView */,
 				28583E0A1F7B590600116294 /* FFPagingViewController */,
 			);
 			path = Components;
@@ -679,6 +697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2833F1771F7B8F600022EF4A /* TFCycleBannerView.m in Sources */,
 				28583E141F7B593800116294 /* FFPagingViewController.m in Sources */,
 				28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */,
 				28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */,
@@ -694,6 +713,7 @@
 				9EEA08E41F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m in Sources */,
 				281E15871F73C47200734744 /* UIColor+App.m in Sources */,
 				281E15861F73C46E00734744 /* CoreStore+App.m in Sources */,
+				2833F17A1F7B91350022EF4A /* TFPageControl.m in Sources */,
 				283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */,
 				281E15851F73C46A00734744 /* CoreCache+App.m in Sources */,
 				286A87E61F73A9B50022825D /* TFNavigationController.m in Sources */,

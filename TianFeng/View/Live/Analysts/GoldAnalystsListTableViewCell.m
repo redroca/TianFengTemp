@@ -12,8 +12,6 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *goldAnalystsListCollection;
 @property (weak, nonatomic) IBOutlet UILabel *ColumnsName;
 
-
-
 @end
 
 

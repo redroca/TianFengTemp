@@ -8,17 +8,45 @@
 
 #import "TFRecommondViewController.h"
 
-#import "FFPagingViewController.h"
+#define kBannerViewHeight   221.f
 
+//Controllers
+
+//Cells
+
+//Views
+#import "TFPageControl.h"
+#import "TFCycleBannerView.h"
+
+//API
+
+//Models
+
+//Others
 #import "TFNavigationBarManager.h"
+#import "CommonAppHeaders.h"
 
-@interface TFRecommondViewController ()
+@interface TFRecommondViewController () <TFCycleBannerViewDelegate, TFCycleBannerViewDataSource>
 
 @end
 
 @implementation TFRecommondViewController
 
 #pragma mark - Setup
+- (void)setupBannerView {
+    UIView *bannerContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, kBannerViewHeight * RATIO + 10)];
+    bannerContainer.backgroundColor = [UIColor GlobalBackgroundColr];
+    
+    TFCycleBannerView *bannerView = [[TFCycleBannerView alloc] init];
+    bannerView.frame = CGRectMake(0, 0, SCREENWIDTH, kBannerViewHeight * RATIO);
+    bannerView.continuous = YES;
+    bannerView.autoPlayTimeInterval = 2;
+    bannerView.datasource = self;
+    bannerView.delegate = self;
+    
+    [bannerContainer addSubview:bannerView];
+    self.tableView.tableHeaderView = bannerContainer;
+}
 
 #pragma mark - Setters/Getters
 
@@ -40,14 +68,12 @@
 
 #pragma mark – View lifecycle
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     self.tableView.tableFooterView = [UIView new];
-    
-//    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self setupBannerView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,7 +94,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //#warning Potentially incomplete method implementation.
-    return 1;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -98,5 +124,26 @@
     if ([self.delegate respondsToSelector:@selector(scrollViewContentOffsetY:)]) {
         [self.delegate scrollViewContentOffsetY:scrollView.contentOffset.y];
     }
+}
+
+- (NSArray *)numberOfCycleBannerView:(TFCycleBannerView *)bannerView {
+    return @[@"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"http://otdtbznd1.bkt.clouddn.com/1d6ab3e73c2bcffbb113ddd1f6507121.jpg", @"http://otdtbznd1.bkt.clouddn.com/079f1defe90d556d73f7574aae167eac.jpg"];
+}
+
+- (UIViewContentMode)contentModeForImageIndex:(NSUInteger)index {
+    return UIViewContentModeScaleAspectFill;
+}
+
+#pragma mark - TFCycleBannerViewDelegate
+- (void)cycleBannerView:(TFCycleBannerView *)bannerView didScrollToIndex:(NSUInteger)index {
+    
+}
+
+- (void)cycleBannerView:(TFCycleBannerView *)bannerView didSelectedAtIndex:(NSUInteger)index {
+    
+}
+
+- (UIImage *)placeHolderImageOfZeroBannerView {
+    return nil;
 }
 @end
