@@ -19,7 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.navigationBar setupBarBackgroundColor:[UIColor whiteColor]];
+//    [self.navigationBar setupBarBackgroundColor:[UIColor whiteColor]];
+    
+    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]
+                             forBarMetrics:UIBarMetricsDefault];
     
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontWithName:@"Helvetica Neue" size:20.0]};
 }

@@ -7,5 +7,9 @@
 //
 
 #import <M4CoreFoundation.h>
+#import <VTMagic.h>
+#import <UIImage+YYAdd.h>
+
+
 
 

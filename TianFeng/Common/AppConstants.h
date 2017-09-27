@@ -7,3 +7,6 @@
 //
 
 
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define IS_IOS_11    floorf([[UIDevice currentDevice].systemVersion floatValue]) ==11.0 ? 1 : 0

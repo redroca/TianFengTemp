@@ -21,20 +21,26 @@
 
 @implementation AppDelegate
 
-
-- (void)extracted {
-    [self setupMainViewController];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self adapterIOS11];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    [self extracted];
+    [self setupMainViewController];
     
     return YES;
+}
+
+- (void)adapterIOS11 {
+    if (@available(ios 11.0,*)) {
+        UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UITableView.appearance.estimatedRowHeight = 0;
+        UITableView.appearance.estimatedSectionFooterHeight = 0;
+        UITableView.appearance.estimatedSectionHeaderHeight = 0;
+    }
 }
 
 - (void)setupMainViewController {

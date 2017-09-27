@@ -15,6 +15,8 @@
 #import "CoreCache+App.h"
 #import "UIImageView+Networking.h"
 
+#import "TFNavigationBarManager.h"
+
 
 
 

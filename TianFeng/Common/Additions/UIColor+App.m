@@ -10,5 +10,7 @@
 #import "ColorMacro.h"
 
 @implementation UIColor (App)
-
++ (UIColor *)LiveTitleNormalColor {
+    return CORE_RGBCOLOR(51, 51, 51);
+}
 @end

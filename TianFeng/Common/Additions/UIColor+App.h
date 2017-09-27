@@ -11,5 +11,5 @@
 @interface UIColor (App)
 
 #pragma mark App Colors
-
++ (UIColor *)LiveTitleNormalColor;
 @end
