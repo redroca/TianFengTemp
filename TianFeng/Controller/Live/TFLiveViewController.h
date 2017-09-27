@@ -7,7 +7,9 @@
 //
 
 #import <M4CoreFoundation/M4CoreFoundation.h>
+#import "FFPagingHeaderView.h"
 
 @interface TFLiveViewController : BaseUIViewController
+@property(nonatomic, strong) FFPagingHeaderView         *pagingHeaderView;
 
 @end

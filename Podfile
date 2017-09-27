@@ -7,6 +7,6 @@ target 'TianFeng' do
 
   # Pods for TianFeng
   pod 'M4CoreFoundation'
-  pod 'WMPageController'
+  pod 'VTMagic'
 
 end

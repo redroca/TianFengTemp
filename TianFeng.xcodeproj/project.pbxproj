@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2816869B1F789BBF004126C3 /* TFAnalystsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281686991F789BBF004126C3 /* TFAnalystsViewController.m */; };
+		2816869C1F789BBF004126C3 /* TFAnalystsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2816869A1F789BBF004126C3 /* TFAnalystsViewController.xib */; };
+		281686A01F789BD1004126C3 /* TFStocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2816869E1F789BD1004126C3 /* TFStocksViewController.m */; };
+		281686A11F789BD1004126C3 /* TFStocksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2816869F1F789BD1004126C3 /* TFStocksViewController.xib */; };
+		281686A51F789BE6004126C3 /* TFRecommondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281686A31F789BE6004126C3 /* TFRecommondViewController.m */; };
+		281686A61F789BE6004126C3 /* TFRecommondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281686A41F789BE6004126C3 /* TFRecommondViewController.xib */; };
+		281686AA1F789C91004126C3 /* TFSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281686A81F789C91004126C3 /* TFSearchViewController.m */; };
+		281686AB1F789C91004126C3 /* TFSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281686A91F789C91004126C3 /* TFSearchViewController.xib */; };
+		281686AF1F789CC0004126C3 /* TFRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281686AD1F789CC0004126C3 /* TFRoomViewController.m */; };
+		281686B01F789CC0004126C3 /* TFRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281686AE1F789CC0004126C3 /* TFRoomViewController.xib */; };
 		281E15851F73C46A00734744 /* CoreCache+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF601F7366BF0007A184 /* CoreCache+App.m */; };
 		281E15861F73C46E00734744 /* CoreStore+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF621F7366BF0007A184 /* CoreStore+App.m */; };
 		281E15871F73C47200734744 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF641F7366BF0007A184 /* UIColor+App.m */; };
 		281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF431F7366BE0007A184 /* UIImageView+Networking.m */; };
 		281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF501F7366BF0007A184 /* MCAuthorizationManager.m */; };
 		281E158A1F73C48100734744 /* SingletonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEF81F7361E90007A184 /* SingletonDemo.m */; };
+		283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */; };
 		284CAEDC1F735D770007A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEDB1F735D770007A184 /* AppDelegate.m */; };
 		284CAEE41F735D770007A184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284CAEE31F735D770007A184 /* Assets.xcassets */; };
+		28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E0D1F7B590600116294 /* FFPagingHeaderView.m */; };
+		28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E0F1F7B590600116294 /* FFPagingViewItem.m */; };
+		28583E141F7B593800116294 /* FFPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E111F7B590600116294 /* FFPagingViewController.m */; };
 		286A87CE1F73A44B0022825D /* TFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87CC1F73A44B0022825D /* TFHomeViewController.m */; };
 		286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87CD1F73A44B0022825D /* TFHomeViewController.xib */; };
 		286A87D31F73A4680022825D /* TFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87D11F73A4680022825D /* TFMineViewController.m */; };
@@ -22,7 +36,6 @@
 		286A87D81F73A4950022825D /* TFAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87D61F73A4950022825D /* TFAccountViewController.m */; };
 		286A87D91F73A4950022825D /* TFAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87D71F73A4950022825D /* TFAccountViewController.xib */; };
 		286A87E21F73A5270022825D /* TFLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87E01F73A5270022825D /* TFLiveViewController.m */; };
-		286A87E31F73A5270022825D /* TFLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87E11F73A5270022825D /* TFLiveViewController.xib */; };
 		286A87E61F73A9B50022825D /* TFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87E51F73A9B50022825D /* TFNavigationController.m */; };
 		286A87EA1F73AB2A0022825D /* TFCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87E81F73AB2A0022825D /* TFCategoryViewController.m */; };
 		286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */; };
@@ -47,6 +60,26 @@
 
 /* Begin PBXFileReference section */
 		0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TianFeng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		281686981F789BBF004126C3 /* TFAnalystsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFAnalystsViewController.h; sourceTree = "<group>"; };
+		281686991F789BBF004126C3 /* TFAnalystsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFAnalystsViewController.m; sourceTree = "<group>"; };
+		2816869A1F789BBF004126C3 /* TFAnalystsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFAnalystsViewController.xib; sourceTree = "<group>"; };
+		2816869D1F789BD1004126C3 /* TFStocksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFStocksViewController.h; sourceTree = "<group>"; };
+		2816869E1F789BD1004126C3 /* TFStocksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFStocksViewController.m; sourceTree = "<group>"; };
+		2816869F1F789BD1004126C3 /* TFStocksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFStocksViewController.xib; sourceTree = "<group>"; };
+		281686A21F789BE6004126C3 /* TFRecommondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRecommondViewController.h; sourceTree = "<group>"; };
+		281686A31F789BE6004126C3 /* TFRecommondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRecommondViewController.m; sourceTree = "<group>"; };
+		281686A41F789BE6004126C3 /* TFRecommondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRecommondViewController.xib; sourceTree = "<group>"; };
+		281686A71F789C91004126C3 /* TFSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFSearchViewController.h; sourceTree = "<group>"; };
+		281686A81F789C91004126C3 /* TFSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFSearchViewController.m; sourceTree = "<group>"; };
+		281686A91F789C91004126C3 /* TFSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFSearchViewController.xib; sourceTree = "<group>"; };
+		281686AC1F789CC0004126C3 /* TFRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRoomViewController.h; sourceTree = "<group>"; };
+		281686AD1F789CC0004126C3 /* TFRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRoomViewController.m; sourceTree = "<group>"; };
+		281686AE1F789CC0004126C3 /* TFRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRoomViewController.xib; sourceTree = "<group>"; };
+		283C99B91F78E78C00EDD8B5 /* TFNavigationBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFNavigationBarManager.h; sourceTree = "<group>"; };
+		283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNavigationBarManager.m; sourceTree = "<group>"; };
+		283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingHeaderView.m; sourceTree = "<group>"; };
+		283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewItem.m; sourceTree = "<group>"; };
+		283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewController.m; sourceTree = "<group>"; };
 		284CAED71F735D770007A184 /* TianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284CAEDA1F735D770007A184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		284CAEDB1F735D770007A184 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +100,12 @@
 		284CAF621F7366BF0007A184 /* CoreStore+App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreStore+App.m"; sourceTree = "<group>"; };
 		284CAF631F7366BF0007A184 /* UIColor+App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
 		284CAF641F7366BF0007A184 /* UIColor+App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
+		28583E0C1F7B590600116294 /* FFPagingHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingHeaderView.h; sourceTree = "<group>"; };
+		28583E0D1F7B590600116294 /* FFPagingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingHeaderView.m; sourceTree = "<group>"; };
+		28583E0E1F7B590600116294 /* FFPagingViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewItem.h; sourceTree = "<group>"; };
+		28583E0F1F7B590600116294 /* FFPagingViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewItem.m; sourceTree = "<group>"; };
+		28583E101F7B590600116294 /* FFPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewController.h; sourceTree = "<group>"; };
+		28583E111F7B590600116294 /* FFPagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewController.m; sourceTree = "<group>"; };
 		286A87CB1F73A44B0022825D /* TFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFHomeViewController.h; sourceTree = "<group>"; };
 		286A87CC1F73A44B0022825D /* TFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFHomeViewController.m; sourceTree = "<group>"; };
 		286A87CD1F73A44B0022825D /* TFHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFHomeViewController.xib; sourceTree = "<group>"; };
@@ -78,7 +117,6 @@
 		286A87D71F73A4950022825D /* TFAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFAccountViewController.xib; sourceTree = "<group>"; };
 		286A87DF1F73A5270022825D /* TFLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFLiveViewController.h; sourceTree = "<group>"; };
 		286A87E01F73A5270022825D /* TFLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFLiveViewController.m; sourceTree = "<group>"; };
-		286A87E11F73A5270022825D /* TFLiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFLiveViewController.xib; sourceTree = "<group>"; };
 		286A87E41F73A9B50022825D /* TFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFNavigationController.h; sourceTree = "<group>"; };
 		286A87E51F73A9B50022825D /* TFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNavigationController.m; sourceTree = "<group>"; };
 		286A87E71F73AB2A0022825D /* TFCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFCategoryViewController.h; sourceTree = "<group>"; };
@@ -134,6 +172,7 @@
 				284CAED81F735D770007A184 /* Products */,
 				767E1B52313EAB0C0C6B4835 /* Pods */,
 				C9020B8E55FD33289F1CAA83 /* Frameworks */,
+				28583E081F7B58D100116294 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +207,7 @@
 				284CAF3E1F7366BE0007A184 /* AppConstants.h */,
 				284CAF481F7366BF0007A184 /* CommonAppHeaders.h */,
 				284CAF4D1F7366BF0007A184 /* PodsHeaders.h */,
+				28583E091F7B590600116294 /* Components */,
 				284CAF5E1F7366BF0007A184 /* Additions */,
 				284CAF3F1F7366BE0007A184 /* Categories */,
 				284CAF651F7366BF0007A184 /* SubClasses */,
@@ -221,6 +261,8 @@
 			children = (
 				284CAF4F1F7366BF0007A184 /* MCAuthorizationManager.h */,
 				284CAF501F7366BF0007A184 /* MCAuthorizationManager.m */,
+				283C99B91F78E78C00EDD8B5 /* TFNavigationBarManager.h */,
+				283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -291,7 +333,11 @@
 			children = (
 				286A87DF1F73A5270022825D /* TFLiveViewController.h */,
 				286A87E01F73A5270022825D /* TFLiveViewController.m */,
-				286A87E11F73A5270022825D /* TFLiveViewController.xib */,
+				28ABEE6F1F75179000A5BC0E /* Recommend */,
+				28ABEE701F7517D700A5BC0E /* Analysts */,
+				28ABEE711F75181000A5BC0E /* Stocks */,
+				28ABEE721F75184700A5BC0E /* Room */,
+				28ABEE6E1F75178800A5BC0E /* Search */,
 				9EEA08CE1F789C3400B469F3 /* Analysts */,
 			);
 			path = Live;
@@ -307,6 +353,45 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		28583E081F7B58D100116294 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */,
+				283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */,
+				283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		28583E091F7B590600116294 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0A1F7B590600116294 /* FFPagingViewController */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		28583E0A1F7B590600116294 /* FFPagingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0B1F7B590600116294 /* FFPagingTopView */,
+				28583E101F7B590600116294 /* FFPagingViewController.h */,
+				28583E111F7B590600116294 /* FFPagingViewController.m */,
+			);
+			path = FFPagingViewController;
+			sourceTree = "<group>";
+		};
+		28583E0B1F7B590600116294 /* FFPagingTopView */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0C1F7B590600116294 /* FFPagingHeaderView.h */,
+				28583E0D1F7B590600116294 /* FFPagingHeaderView.m */,
+				28583E0E1F7B590600116294 /* FFPagingViewItem.h */,
+				28583E0F1F7B590600116294 /* FFPagingViewItem.m */,
+			);
+			path = FFPagingTopView;
+			sourceTree = "<group>";
+		};
 		28ABEE681F7512B000A5BC0E /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +401,56 @@
 				28ABEE6A1F7512DF00A5BC0E /* main.m */,
 			);
 			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		28ABEE6E1F75178800A5BC0E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				281686A71F789C91004126C3 /* TFSearchViewController.h */,
+				281686A81F789C91004126C3 /* TFSearchViewController.m */,
+				281686A91F789C91004126C3 /* TFSearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		28ABEE6F1F75179000A5BC0E /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				281686A21F789BE6004126C3 /* TFRecommondViewController.h */,
+				281686A31F789BE6004126C3 /* TFRecommondViewController.m */,
+				281686A41F789BE6004126C3 /* TFRecommondViewController.xib */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		28ABEE701F7517D700A5BC0E /* Analysts */ = {
+			isa = PBXGroup;
+			children = (
+				281686981F789BBF004126C3 /* TFAnalystsViewController.h */,
+				281686991F789BBF004126C3 /* TFAnalystsViewController.m */,
+				2816869A1F789BBF004126C3 /* TFAnalystsViewController.xib */,
+			);
+			path = Analysts;
+			sourceTree = "<group>";
+		};
+		28ABEE711F75181000A5BC0E /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				2816869D1F789BD1004126C3 /* TFStocksViewController.h */,
+				2816869E1F789BD1004126C3 /* TFStocksViewController.m */,
+				2816869F1F789BD1004126C3 /* TFStocksViewController.xib */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		28ABEE721F75184700A5BC0E /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				281686AC1F789CC0004126C3 /* TFRoomViewController.h */,
+				281686AD1F789CC0004126C3 /* TFRoomViewController.m */,
+				281686AE1F789CC0004126C3 /* TFRoomViewController.xib */,
+			);
+			path = Room;
 			sourceTree = "<group>";
 		};
 		767E1B52313EAB0C0C6B4835 /* Pods */ = {
@@ -486,16 +621,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				284CAEE41F735D770007A184 /* Assets.xcassets in Resources */,
+				281686A11F789BD1004126C3 /* TFStocksViewController.xib in Resources */,
+				2816869C1F789BBF004126C3 /* TFAnalystsViewController.xib in Resources */,
+				281686A61F789BE6004126C3 /* TFRecommondViewController.xib in Resources */,
+				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
 				9EEA08DB1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib in Resources */,
 				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
 				9E330A291F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib in Resources */,
 				9EEA08E01F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.xib in Resources */,
-				286A87E31F73A5270022825D /* TFLiveViewController.xib in Resources */,
 				286A87D91F73A4950022825D /* TFAccountViewController.xib in Resources */,
 				9EEA08EA1F79020300B469F3 /* AnalystsDetailView.xib in Resources */,
 				9EEA08F01F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib in Resources */,
 				286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */,
+				281686B01F789CC0004126C3 /* TFRoomViewController.xib in Resources */,
 				286A87D41F73A4680022825D /* TFMineViewController.xib in Resources */,
+				281686AB1F789C91004126C3 /* TFSearchViewController.xib in Resources */,
 				9EEA08E51F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib in Resources */,
 				9E330A2F1F7A5D6D00A1C67F /* SearchResultsTableViewCell.xib in Resources */,
 			);
@@ -516,7 +656,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A5B1B60DFEFEF745BC3EE415 /* [CP] Embed Pods Frameworks */ = {
@@ -556,7 +696,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28583E141F7B593800116294 /* FFPagingViewController.m in Sources */,
+				28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */,
+				28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */,
 				28ABEE6D1F75142800A5BC0E /* main.m in Sources */,
+				281686AA1F789C91004126C3 /* TFSearchViewController.m in Sources */,
+				281686A01F789BD1004126C3 /* TFStocksViewController.m in Sources */,
+				281686AF1F789CC0004126C3 /* TFRoomViewController.m in Sources */,
 				281E158A1F73C48100734744 /* SingletonDemo.m in Sources */,
 				9EEA08E81F7901F200B469F3 /* AnalystsDetailView.m in Sources */,
 				281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */,
@@ -565,6 +711,7 @@
 				9EEA08E41F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m in Sources */,
 				281E15871F73C47200734744 /* UIColor+App.m in Sources */,
 				281E15861F73C46E00734744 /* CoreStore+App.m in Sources */,
+				283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */,
 				281E15851F73C46A00734744 /* CoreCache+App.m in Sources */,
 				286A87E61F73A9B50022825D /* TFNavigationController.m in Sources */,
 				9EEA08DF1F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.m in Sources */,
@@ -575,6 +722,8 @@
 				9E330A2E1F7A5D6D00A1C67F /* SearchResultsTableViewCell.m in Sources */,
 				286A87E21F73A5270022825D /* TFLiveViewController.m in Sources */,
 				286A87CE1F73A44B0022825D /* TFHomeViewController.m in Sources */,
+				2816869B1F789BBF004126C3 /* TFAnalystsViewController.m in Sources */,
+				281686A51F789BE6004126C3 /* TFRecommondViewController.m in Sources */,
 				286A87D81F73A4950022825D /* TFAccountViewController.m in Sources */,
 				9EEA08DA1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m in Sources */,
 				286A87D31F73A4680022825D /* TFMineViewController.m in Sources */,

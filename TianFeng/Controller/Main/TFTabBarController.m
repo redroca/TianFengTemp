@@ -44,7 +44,8 @@
     [viewControllers addObject:[self configureViewController:categoryVC title:@"分类" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
     
     TFLiveViewController *liveVC = [[TFLiveViewController alloc] init];
-    [viewControllers addObject:[self configureViewController:liveVC title:@"直播" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
+    TFNavigationController *nav = (TFNavigationController *)[self configureViewController:liveVC title:@"直播" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]];
+    [viewControllers addObject:nav];
     
     TFAccountViewController *accountVC = [[TFAccountViewController alloc] init];
     [viewControllers addObject:[self configureViewController:accountVC title:@"账户" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];

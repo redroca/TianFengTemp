@@ -70,11 +70,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## WMPageController
+## VTMagic
 
 The MIT License (MIT)
 
-Copyright (c) 2015 
+Copyright (c) 2016 Victor Tian(tianzhuo112@163.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
