@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CommonAppHeaders.h"
 
-@interface StocksVedioListCollectionViewCell : CoreCollectionViewCell
+@interface StocksVedioListCollectionViewCell : CoreXibCollectionViewCell
 
 
 //股票预告图片尺寸300*200

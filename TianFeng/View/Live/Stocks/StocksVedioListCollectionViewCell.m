@@ -13,9 +13,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *VedioTitle;
 @property (weak, nonatomic) IBOutlet UILabel *VedioName;
 @property (weak, nonatomic) IBOutlet UILabel *VedioTime;
-@property (weak, nonatomic) IBOutlet UILabel *VedioStatus;
-@property (weak, nonatomic) IBOutlet UIView *DotsOfStatus;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthOfStatusLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *vedioStatusImage;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthOfStatusImage;
+
+
 
 @end
 
@@ -28,11 +29,6 @@
 
 #pragma mark – Initialization & Memory management methods
 - (void)initUserInterface {
-    _VedioStatus.layer.cornerRadius = 5;
-    _VedioStatus.layer.masksToBounds = YES;
-    _DotsOfStatus.layer.cornerRadius = 6;
-    _DotsOfStatus.layer.masksToBounds = YES;
-    
 
     
 }
