@@ -6,9 +6,9 @@
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "SearchResultsTableViewCell.h"
+#import "TFSearchResultsTableViewCell.h"
 
-@interface SearchResultsTableViewCell()
+@interface TFSearchResultsTableViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *VedioCoverImage;
 @property (weak, nonatomic) IBOutlet UIImageView *VedioStatusImage;
 @property (weak, nonatomic) IBOutlet UILabel *VedioTitleLabel;
@@ -20,7 +20,7 @@
 @end
 
 
-@implementation SearchResultsTableViewCell
+@implementation TFSearchResultsTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

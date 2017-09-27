@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "CommonAppHeaders.h"
 
-@interface GoldAnalystsListTableViewCell : CoreXibTableViewCell
+@interface TFGoldAnalystsListTableViewCell : CoreXibTableViewCell
 
+@property (weak, nonatomic) IBOutlet UICollectionView *goldAnalystsListCollection;
 
 
 @end

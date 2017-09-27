@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnalystsDetailView : UIView
+@interface TFAnalystsDetailView : UIView
 
 @end

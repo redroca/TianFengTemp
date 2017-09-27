@@ -6,9 +6,9 @@
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "StocksVedioListCollectionViewCell.h"
+#import "TFStocksVedioListCollectionViewCell.h"
 
-@interface StocksVedioListCollectionViewCell()
+@interface TFStocksVedioListCollectionViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *VedioCoverImage;
 @property (weak, nonatomic) IBOutlet UILabel *VedioTitle;
 @property (weak, nonatomic) IBOutlet UILabel *VedioName;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation StocksVedioListCollectionViewCell
+@implementation TFStocksVedioListCollectionViewCell
 
 - (void)setup {
     [super setup];
