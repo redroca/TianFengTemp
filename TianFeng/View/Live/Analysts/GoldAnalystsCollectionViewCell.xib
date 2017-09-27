@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GoldAnalystsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyi-ZU-ji9">
+                        <rect key="frame" x="0.0" y="0.0" width="147" height="147"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tyi-ZU-ji9" secondAttribute="height" multiplier="1:1" id="Aam-hg-yoX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="罗大涛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-U9-atA">
+                        <rect key="frame" x="0.0" y="152" width="142" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="77k-oj-E7u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="职位职位职位职位职位职位职位职位" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="592-tr-UVe">
+                        <rect key="frame" x="0.0" y="183" width="147" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="top" secondItem="tyi-ZU-ji9" secondAttribute="top" id="5zF-DY-vmh"/>
+                <constraint firstItem="tyi-ZU-ji9" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="9BK-II-a7p"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="leading" secondItem="tyi-ZU-ji9" secondAttribute="leading" id="Lql-04-7qV"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="J9O-U9-atA" secondAttribute="trailing" constant="5" id="Qkb-lR-NbN"/>
+                <constraint firstItem="J9O-U9-atA" firstAttribute="top" secondItem="tyi-ZU-ji9" secondAttribute="bottom" constant="5" id="VmG-Fg-cVh"/>
+                <constraint firstItem="592-tr-UVe" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="Wiu-Dm-EfV"/>
+                <constraint firstItem="J9O-U9-atA" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="XU1-O3-Deo"/>
+                <constraint firstItem="592-tr-UVe" firstAttribute="top" secondItem="tyi-ZU-ji9" secondAttribute="bottom" constant="36" id="nj0-jj-XFp"/>
+                <constraint firstItem="592-tr-UVe" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="qk6-SU-Xtc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="203" height="171"/>
+            <connections>
+                <outlet property="analystsHeaderImage" destination="tyi-ZU-ji9" id="KN9-EK-Ndr"/>
+                <outlet property="analystsName" destination="J9O-U9-atA" id="8jK-JS-qLU"/>
+                <outlet property="analystsPosition" destination="592-tr-UVe" id="S2S-Jh-5wd"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="-92.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

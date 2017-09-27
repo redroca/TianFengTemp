@@ -24,11 +24,11 @@
 		281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF501F7366BF0007A184 /* MCAuthorizationManager.m */; };
 		281E158A1F73C48100734744 /* SingletonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEF81F7361E90007A184 /* SingletonDemo.m */; };
 		283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */; };
-		283C99C41F79076500EDD8B5 /* FFPagingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */; };
-		283C99C51F79076900EDD8B5 /* FFPagingViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */; };
-		283C99C61F79076D00EDD8B5 /* FFPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */; };
 		284CAEDC1F735D770007A184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAEDB1F735D770007A184 /* AppDelegate.m */; };
 		284CAEE41F735D770007A184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284CAEE31F735D770007A184 /* Assets.xcassets */; };
+		28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E0D1F7B590600116294 /* FFPagingHeaderView.m */; };
+		28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E0F1F7B590600116294 /* FFPagingViewItem.m */; };
+		28583E141F7B593800116294 /* FFPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28583E111F7B590600116294 /* FFPagingViewController.m */; };
 		286A87CE1F73A44B0022825D /* TFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87CC1F73A44B0022825D /* TFHomeViewController.m */; };
 		286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87CD1F73A44B0022825D /* TFHomeViewController.xib */; };
 		286A87D31F73A4680022825D /* TFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87D11F73A4680022825D /* TFMineViewController.m */; };
@@ -42,6 +42,18 @@
 		286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87ED1F73ADBE0022825D /* TFTabBarController.m */; };
 		28ABEE6D1F75142800A5BC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABEE6A1F7512DF00A5BC0E /* main.m */; };
 		5890CD85CC7CF90F8DA26B65 /* libPods-TianFeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */; };
+		9E330A281F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E330A261F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.m */; };
+		9E330A291F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E330A271F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib */; };
+		9EEA08DA1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08D81F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m */; };
+		9EEA08DB1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08D91F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib */; };
+		9EEA08DF1F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08DD1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.m */; };
+		9EEA08E01F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08DE1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.xib */; };
+		9EEA08E41F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08E21F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m */; };
+		9EEA08E51F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08E31F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib */; };
+		9EEA08E81F7901F200B469F3 /* AnalystsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08E71F7901F200B469F3 /* AnalystsDetailView.m */; };
+		9EEA08EA1F79020300B469F3 /* AnalystsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08E91F79020300B469F3 /* AnalystsDetailView.xib */; };
+		9EEA08EF1F7905E000B469F3 /* StocksVedioListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08ED1F7905E000B469F3 /* StocksVedioListCollectionViewCell.m */; };
+		9EEA08F01F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08EE1F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,11 +75,8 @@
 		281686AE1F789CC0004126C3 /* TFRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRoomViewController.xib; sourceTree = "<group>"; };
 		283C99B91F78E78C00EDD8B5 /* TFNavigationBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFNavigationBarManager.h; sourceTree = "<group>"; };
 		283C99BA1F78E78C00EDD8B5 /* TFNavigationBarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNavigationBarManager.m; sourceTree = "<group>"; };
-		283C99BE1F79071F00EDD8B5 /* FFPagingHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingHeaderView.h; sourceTree = "<group>"; };
 		283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingHeaderView.m; sourceTree = "<group>"; };
-		283C99C01F79071F00EDD8B5 /* FFPagingViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewItem.h; sourceTree = "<group>"; };
 		283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewItem.m; sourceTree = "<group>"; };
-		283C99C21F79071F00EDD8B5 /* FFPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewController.h; sourceTree = "<group>"; };
 		283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewController.m; sourceTree = "<group>"; };
 		284CAED71F735D770007A184 /* TianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284CAEDA1F735D770007A184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +98,12 @@
 		284CAF621F7366BF0007A184 /* CoreStore+App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreStore+App.m"; sourceTree = "<group>"; };
 		284CAF631F7366BF0007A184 /* UIColor+App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
 		284CAF641F7366BF0007A184 /* UIColor+App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
+		28583E0C1F7B590600116294 /* FFPagingHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingHeaderView.h; sourceTree = "<group>"; };
+		28583E0D1F7B590600116294 /* FFPagingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingHeaderView.m; sourceTree = "<group>"; };
+		28583E0E1F7B590600116294 /* FFPagingViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewItem.h; sourceTree = "<group>"; };
+		28583E0F1F7B590600116294 /* FFPagingViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewItem.m; sourceTree = "<group>"; };
+		28583E101F7B590600116294 /* FFPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPagingViewController.h; sourceTree = "<group>"; };
+		28583E111F7B590600116294 /* FFPagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPagingViewController.m; sourceTree = "<group>"; };
 		286A87CB1F73A44B0022825D /* TFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFHomeViewController.h; sourceTree = "<group>"; };
 		286A87CC1F73A44B0022825D /* TFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFHomeViewController.m; sourceTree = "<group>"; };
 		286A87CD1F73A44B0022825D /* TFHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFHomeViewController.xib; sourceTree = "<group>"; };
@@ -113,6 +128,24 @@
 		28ABEE6C1F7512E000A5BC0E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TianFeng/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.release.xcconfig"; sourceTree = "<group>"; };
 		907D2E25F1F347A7E7E93640 /* Pods-TianFeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.debug.xcconfig"; sourceTree = "<group>"; };
+		9E330A251F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendAnalystsListTableViewCell.h; sourceTree = "<group>"; };
+		9E330A261F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendAnalystsListTableViewCell.m; sourceTree = "<group>"; };
+		9E330A271F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendAnalystsListTableViewCell.xib; sourceTree = "<group>"; };
+		9EEA08D71F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoldAnalystsListTableViewCell.h; sourceTree = "<group>"; };
+		9EEA08D81F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldAnalystsListTableViewCell.m; sourceTree = "<group>"; };
+		9EEA08D91F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoldAnalystsListTableViewCell.xib; sourceTree = "<group>"; };
+		9EEA08DC1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoldAnalystsCollectionViewCell.h; sourceTree = "<group>"; };
+		9EEA08DD1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldAnalystsCollectionViewCell.m; sourceTree = "<group>"; };
+		9EEA08DE1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoldAnalystsCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EEA08E11F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendAnalystsTableViewCell.h; sourceTree = "<group>"; };
+		9EEA08E21F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendAnalystsTableViewCell.m; sourceTree = "<group>"; };
+		9EEA08E31F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendAnalystsTableViewCell.xib; sourceTree = "<group>"; };
+		9EEA08E61F7901F200B469F3 /* AnalystsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalystsDetailView.h; sourceTree = "<group>"; };
+		9EEA08E71F7901F200B469F3 /* AnalystsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalystsDetailView.m; sourceTree = "<group>"; };
+		9EEA08E91F79020300B469F3 /* AnalystsDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalystsDetailView.xib; sourceTree = "<group>"; };
+		9EEA08EC1F7905E000B469F3 /* StocksVedioListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StocksVedioListCollectionViewCell.h; sourceTree = "<group>"; };
+		9EEA08ED1F7905E000B469F3 /* StocksVedioListCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StocksVedioListCollectionViewCell.m; sourceTree = "<group>"; };
+		9EEA08EE1F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksVedioListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,27 +160,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		283C99BC1F79071F00EDD8B5 /* FFPagingViewController */ = {
-			isa = PBXGroup;
-			children = (
-				283C99BD1F79071F00EDD8B5 /* FFPagingTopView */,
-				283C99C21F79071F00EDD8B5 /* FFPagingViewController.h */,
-				283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */,
-			);
-			path = FFPagingViewController;
-			sourceTree = "<group>";
-		};
-		283C99BD1F79071F00EDD8B5 /* FFPagingTopView */ = {
-			isa = PBXGroup;
-			children = (
-				283C99BE1F79071F00EDD8B5 /* FFPagingHeaderView.h */,
-				283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */,
-				283C99C01F79071F00EDD8B5 /* FFPagingViewItem.h */,
-				283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */,
-			);
-			path = FFPagingTopView;
-			sourceTree = "<group>";
-		};
 		284CAECE1F735D770007A184 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 				284CAED81F735D770007A184 /* Products */,
 				767E1B52313EAB0C0C6B4835 /* Pods */,
 				C9020B8E55FD33289F1CAA83 /* Frameworks */,
+				28583E081F7B58D100116294 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,9 +187,9 @@
 				284CAEF11F7361E80007A184 /* Common */,
 				284CAEF91F7361E90007A184 /* Controller */,
 				9EEA08B91F74EC6F00B469F3 /* Model */,
+				9EEA08B81F74EC5500B469F3 /* View */,
 				284CAEF41F7361E90007A184 /* RESTfulAPI */,
 				9EEA08B71F74EC4000B469F3 /* VendorAPI */,
-				9EEA08B81F74EC5500B469F3 /* View */,
 				284CAF2D1F7362480007A184 /* Resource */,
 				28ABEE681F7512B000A5BC0E /* Supporting File */,
 			);
@@ -189,12 +202,11 @@
 				284CAF3E1F7366BE0007A184 /* AppConstants.h */,
 				284CAF481F7366BF0007A184 /* CommonAppHeaders.h */,
 				284CAF4D1F7366BF0007A184 /* PodsHeaders.h */,
+				28583E091F7B590600116294 /* Components */,
 				284CAF5E1F7366BF0007A184 /* Additions */,
 				284CAF3F1F7366BE0007A184 /* Categories */,
-				284CAF6A1F7366BF0007A184 /* Components */,
 				284CAF651F7366BF0007A184 /* SubClasses */,
 				284CAF4E1F7366BF0007A184 /* Utility */,
-				284CAF751F7366C00007A184 /* ViewControllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -272,21 +284,6 @@
 			path = SubClasses;
 			sourceTree = "<group>";
 		};
-		284CAF6A1F7366BF0007A184 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				283C99BC1F79071F00EDD8B5 /* FFPagingViewController */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		284CAF751F7366C00007A184 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		284CAF861F7369C50007A184 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +333,7 @@
 				28ABEE711F75181000A5BC0E /* Stocks */,
 				28ABEE721F75184700A5BC0E /* Room */,
 				28ABEE6E1F75178800A5BC0E /* Search */,
+				9EEA08CE1F789C3400B469F3 /* Analysts */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -348,6 +346,45 @@
 				286A87D71F73A4950022825D /* TFAccountViewController.xib */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		28583E081F7B58D100116294 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				283C99C31F79071F00EDD8B5 /* FFPagingViewController.m */,
+				283C99C11F79071F00EDD8B5 /* FFPagingViewItem.m */,
+				283C99BF1F79071F00EDD8B5 /* FFPagingHeaderView.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		28583E091F7B590600116294 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0A1F7B590600116294 /* FFPagingViewController */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		28583E0A1F7B590600116294 /* FFPagingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0B1F7B590600116294 /* FFPagingTopView */,
+				28583E101F7B590600116294 /* FFPagingViewController.h */,
+				28583E111F7B590600116294 /* FFPagingViewController.m */,
+			);
+			path = FFPagingViewController;
+			sourceTree = "<group>";
+		};
+		28583E0B1F7B590600116294 /* FFPagingTopView */ = {
+			isa = PBXGroup;
+			children = (
+				28583E0C1F7B590600116294 /* FFPagingHeaderView.h */,
+				28583E0D1F7B590600116294 /* FFPagingHeaderView.m */,
+				28583E0E1F7B590600116294 /* FFPagingViewItem.h */,
+				28583E0F1F7B590600116294 /* FFPagingViewItem.m */,
+			);
+			path = FFPagingTopView;
 			sourceTree = "<group>";
 		};
 		28ABEE681F7512B000A5BC0E /* Supporting File */ = {
@@ -430,6 +467,7 @@
 		9EEA08B81F74EC5500B469F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9EEA08D01F78A24A00B469F3 /* Live */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +477,62 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9EEA08CE1F789C3400B469F3 /* Analysts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analysts;
+			sourceTree = "<group>";
+		};
+		9EEA08D01F78A24A00B469F3 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA08F11F79F3BD00B469F3 /* Lecture hall */,
+				9EEA08EB1F79058F00B469F3 /* Stocks */,
+				9EEA08D11F78A25200B469F3 /* Analysts */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		9EEA08D11F78A25200B469F3 /* Analysts */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA08D71F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.h */,
+				9EEA08D81F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m */,
+				9EEA08D91F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib */,
+				9EEA08DC1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.h */,
+				9EEA08DD1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.m */,
+				9EEA08DE1F78AEAF00B469F3 /* GoldAnalystsCollectionViewCell.xib */,
+				9E330A251F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.h */,
+				9E330A261F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.m */,
+				9E330A271F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib */,
+				9EEA08E11F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.h */,
+				9EEA08E21F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m */,
+				9EEA08E31F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib */,
+				9EEA08E61F7901F200B469F3 /* AnalystsDetailView.h */,
+				9EEA08E71F7901F200B469F3 /* AnalystsDetailView.m */,
+				9EEA08E91F79020300B469F3 /* AnalystsDetailView.xib */,
+			);
+			path = Analysts;
+			sourceTree = "<group>";
+		};
+		9EEA08EB1F79058F00B469F3 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA08EC1F7905E000B469F3 /* StocksVedioListCollectionViewCell.h */,
+				9EEA08ED1F7905E000B469F3 /* StocksVedioListCollectionViewCell.m */,
+				9EEA08EE1F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		9EEA08F11F79F3BD00B469F3 /* Lecture hall */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lecture hall";
 			sourceTree = "<group>";
 		};
 		C9020B8E55FD33289F1CAA83 /* Frameworks */ = {
@@ -515,11 +609,18 @@
 				2816869C1F789BBF004126C3 /* TFAnalystsViewController.xib in Resources */,
 				281686A61F789BE6004126C3 /* TFRecommondViewController.xib in Resources */,
 				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
+				9EEA08DB1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.xib in Resources */,
+				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
+				9E330A291F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.xib in Resources */,
+				9EEA08E01F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.xib in Resources */,
 				286A87D91F73A4950022825D /* TFAccountViewController.xib in Resources */,
+				9EEA08EA1F79020300B469F3 /* AnalystsDetailView.xib in Resources */,
+				9EEA08F01F7905E000B469F3 /* StocksVedioListCollectionViewCell.xib in Resources */,
 				286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */,
 				281686B01F789CC0004126C3 /* TFRoomViewController.xib in Resources */,
 				286A87D41F73A4680022825D /* TFMineViewController.xib in Resources */,
 				281686AB1F789C91004126C3 /* TFSearchViewController.xib in Resources */,
+				9EEA08E51F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,21 +679,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283C99C61F79076D00EDD8B5 /* FFPagingViewController.m in Sources */,
-				283C99C51F79076900EDD8B5 /* FFPagingViewItem.m in Sources */,
-				283C99C41F79076500EDD8B5 /* FFPagingHeaderView.m in Sources */,
+				28583E141F7B593800116294 /* FFPagingViewController.m in Sources */,
+				28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */,
+				28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */,
 				28ABEE6D1F75142800A5BC0E /* main.m in Sources */,
 				281686AA1F789C91004126C3 /* TFSearchViewController.m in Sources */,
 				281686A01F789BD1004126C3 /* TFStocksViewController.m in Sources */,
 				281686AF1F789CC0004126C3 /* TFRoomViewController.m in Sources */,
 				281E158A1F73C48100734744 /* SingletonDemo.m in Sources */,
+				9EEA08E81F7901F200B469F3 /* AnalystsDetailView.m in Sources */,
 				281E15891F73C47900734744 /* MCAuthorizationManager.m in Sources */,
 				281E15881F73C47500734744 /* UIImageView+Networking.m in Sources */,
+				9E330A281F7A411D00A1C67F /* RecommendAnalystsListTableViewCell.m in Sources */,
+				9EEA08E41F78F9FD00B469F3 /* RecommendAnalystsTableViewCell.m in Sources */,
 				281E15871F73C47200734744 /* UIColor+App.m in Sources */,
 				281E15861F73C46E00734744 /* CoreStore+App.m in Sources */,
 				283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */,
 				281E15851F73C46A00734744 /* CoreCache+App.m in Sources */,
 				286A87E61F73A9B50022825D /* TFNavigationController.m in Sources */,
+				9EEA08DF1F78AEB000B469F3 /* GoldAnalystsCollectionViewCell.m in Sources */,
+				9EEA08EF1F7905E000B469F3 /* StocksVedioListCollectionViewCell.m in Sources */,
 				286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */,
 				284CAEDC1F735D770007A184 /* AppDelegate.m in Sources */,
 				286A87EA1F73AB2A0022825D /* TFCategoryViewController.m in Sources */,
@@ -601,6 +707,7 @@
 				2816869B1F789BBF004126C3 /* TFAnalystsViewController.m in Sources */,
 				281686A51F789BE6004126C3 /* TFRecommondViewController.m in Sources */,
 				286A87D81F73A4950022825D /* TFAccountViewController.m in Sources */,
+				9EEA08DA1F78A4DE00B469F3 /* GoldAnalystsListTableViewCell.m in Sources */,
 				286A87D31F73A4680022825D /* TFMineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

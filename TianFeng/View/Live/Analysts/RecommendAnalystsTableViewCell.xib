@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="193" id="KGk-i7-Jjw" customClass="RecommendAnalystsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzD-q8-VdI">
+                        <rect key="frame" x="15" y="12.5" width="114.5" height="114.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fzD-q8-VdI" secondAttribute="height" id="AVk-4B-tTR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQr-fn-63b">
+                        <rect key="frame" x="139.5" y="43" width="220.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果你不能简述你的想法说明你还不够了解它如果你不能简述你的想法说明你还不够了解它" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-IW-z8q">
+                        <rect key="frame" x="139.5" y="69" width="230.5" height="60.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cw6-85-Xnd">
+                        <rect key="frame" x="16" y="138.5" width="337" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GYL-vn-WOr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vQr-fn-63b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="4FE-Fv-D0K"/>
+                    <constraint firstAttribute="trailing" secondItem="Cw6-85-Xnd" secondAttribute="trailing" constant="22" id="9lx-OE-i7z"/>
+                    <constraint firstItem="vQr-fn-63b" firstAttribute="leading" secondItem="fzD-q8-VdI" secondAttribute="trailing" constant="10" id="DWW-52-goV"/>
+                    <constraint firstAttribute="bottom" secondItem="tv9-IW-z8q" secondAttribute="bottom" constant="10" id="EPH-eS-dHU"/>
+                    <constraint firstAttribute="bottom" secondItem="fzD-q8-VdI" secondAttribute="bottom" constant="12.5" id="Pc8-le-u46"/>
+                    <constraint firstItem="tv9-IW-z8q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="69" id="agu-Zv-9SO"/>
+                    <constraint firstAttribute="trailing" secondItem="tv9-IW-z8q" secondAttribute="trailing" constant="5" id="h5O-SA-uh9"/>
+                    <constraint firstAttribute="bottom" secondItem="Cw6-85-Xnd" secondAttribute="bottom" id="i11-eu-IyW"/>
+                    <constraint firstAttribute="trailing" secondItem="vQr-fn-63b" secondAttribute="trailing" constant="15" id="imO-zB-UK1"/>
+                    <constraint firstItem="Cw6-85-Xnd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ine-um-ndl"/>
+                    <constraint firstItem="tv9-IW-z8q" firstAttribute="leading" secondItem="vQr-fn-63b" secondAttribute="leading" id="iva-mG-ZYv"/>
+                    <constraint firstItem="fzD-q8-VdI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="j6J-Dn-XSJ"/>
+                    <constraint firstItem="fzD-q8-VdI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12.5" id="vT6-vg-ie1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="AnalystsDescription" destination="tv9-IW-z8q" id="UCV-28-qzm"/>
+                <outlet property="AnalystsHeaderImage" destination="fzD-q8-VdI" id="d0z-xH-lNb"/>
+                <outlet property="AnalystsName" destination="vQr-fn-63b" id="0Pg-AD-WRN"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>
