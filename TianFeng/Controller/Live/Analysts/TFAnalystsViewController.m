@@ -10,6 +10,7 @@
 #import "TFGoldAnalystsListTableViewCell.h"
 #import "GoldAnalystsCollectionViewCell.h"
 #import "TFRecommendAnalystsListTableViewCell.h"
+#import "RecommendAnalystsTableViewCell.h"
 
 @interface TFAnalystsViewController ()
 
@@ -68,7 +69,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //#warning Incomplete method implementation.
-    return 1;
+    if (section == 2) {
+        return 5;
+    } else {
+        return 1;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,8 +83,7 @@
         cell.selectionStyle = NO;
         return cell;
     } else {
-//        TFRecommendAnalystsListTableViewCell * cell = [TFRecommendAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
-        TFGoldAnalystsListTableViewCell * cell = [TFGoldAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        RecommendAnalystsTableViewCell * cell = [RecommendAnalystsTableViewCell reusableCellDequeueTableView:self.tableView];
         cell.selectionStyle = NO;
         return cell;
     }
@@ -87,7 +91,11 @@
 
 //cell 高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 273.5;
+    if (indexPath.section == 2) {
+        return 140;
+    } else {
+        return 273.5;
+    }
 }
 
 @end
