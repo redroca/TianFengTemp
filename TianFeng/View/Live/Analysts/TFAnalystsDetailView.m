@@ -6,9 +6,9 @@
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "AnalystsDetailView.h"
+#import "TFAnalystsDetailView.h"
 
-@interface AnalystsDetailView()
+@interface TFAnalystsDetailView()
 @property (weak, nonatomic) IBOutlet UIImageView *AnalystsHeaderImage;
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsName;
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsPosition;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation AnalystsDetailView
+@implementation TFAnalystsDetailView
 
 /*
 // Only override drawRect: if you perform custom drawing.

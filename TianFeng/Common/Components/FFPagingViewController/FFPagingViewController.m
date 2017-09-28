@@ -87,7 +87,7 @@
     [self.scrollview addSubview:childController.view];
     if ([self.dataSource respondsToSelector:@selector(pagingViewControllerFrameAtIndex:)]) {
         CGRect rect = [self.dataSource pagingViewControllerFrameAtIndex:index];
-        childController.view.frame = CGRectMake(index * [UIScreen mainScreen].bounds.size.width, rect.origin.y, self.scrollview.frame.size.width, self.scrollview.frame.size.height);
+        childController.view.frame = CGRectMake(index * [UIScreen mainScreen].bounds.size.width, rect.origin.y, rect.size.width, rect.size.height);
     } else {
         childController.view.frame = CGRectMake(index * [UIScreen mainScreen].bounds.size.width, 0, self.scrollview.frame.size.width, self.scrollview.frame.size.height);
     }

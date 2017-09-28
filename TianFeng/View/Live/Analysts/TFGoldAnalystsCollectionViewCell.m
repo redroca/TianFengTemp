@@ -6,9 +6,9 @@
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "GoldAnalystsCollectionViewCell.h"
+#import "TFGoldAnalystsCollectionViewCell.h"
 
-@interface GoldAnalystsCollectionViewCell()
+@interface TFGoldAnalystsCollectionViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *analystsHeaderImage;
 @property (weak, nonatomic) IBOutlet UILabel *analystsName;
 @property (weak, nonatomic) IBOutlet UILabel *analystsPosition;
@@ -18,7 +18,7 @@
 @end
 
 
-@implementation GoldAnalystsCollectionViewCell
+@implementation TFGoldAnalystsCollectionViewCell
 
 - (void)setup {
     [super setup];

@@ -7,6 +7,9 @@
 //
 
 #import "TFAnalystsViewController.h"
+#import "TFGoldAnalystsListTableViewCell.h"
+#import "TFGoldAnalystsCollectionViewCell.h"
+#import "TFRecommendAnalystsListTableViewCell.h"
 
 @interface TFAnalystsViewController ()
 
@@ -32,10 +35,13 @@
 
 #pragma mark – Initialization & Memory management methods
 
+
+
 #pragma mark – View lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,7 +62,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //#warning Potentially incomplete method implementation.
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -67,16 +73,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Override
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (indexPath.section < 2) {
+        TFGoldAnalystsListTableViewCell * cell = [TFGoldAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        cell.selectionStyle = NO;
+        return cell;
+    } else {
+//        TFRecommendAnalystsListTableViewCell * cell = [TFRecommendAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        TFGoldAnalystsListTableViewCell * cell = [TFGoldAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        cell.selectionStyle = NO;
+        return cell;
     }
-    cell.backgroundColor = [UIColor grayColor];
-    
-    return cell;
+}
+
+//cell 高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 273.5;
 }
 
 @end

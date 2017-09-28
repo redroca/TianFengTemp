@@ -1,5 +1,5 @@
 //
-//  GoldAnalystsListTableViewCell.h
+//  AnalystsDetailView.h
 //  TianFeng
 //
 //  Created by 周恒 on 2017/9/25.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CommonAppHeaders.h"
 
-@interface GoldAnalystsListTableViewCell : CoreXibTableViewCell
-
-
+@interface TFAnalystsDetailView : UIView
 
 @end

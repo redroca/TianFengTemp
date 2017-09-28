@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "CommonAppHeaders.h"
 
-@interface RecommendAnalystsTableViewCell : CoreXibTableViewCell
+@interface TFRecommendAnalystsTableViewCell : CoreXibTableViewCell
 
 @end

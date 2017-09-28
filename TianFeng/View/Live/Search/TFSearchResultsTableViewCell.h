@@ -1,5 +1,5 @@
 //
-//  RecommendAnalystsListTableViewCell.h
+//  SearchResultsTableViewCell.h
 //  TianFeng
 //
 //  Created by 周恒 on 2017/9/26.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonAppHeaders.h"
 
-@interface RecommendAnalystsListTableViewCell : UITableViewCell
+@interface TFSearchResultsTableViewCell : CoreXibTableViewCell
 
 @end
