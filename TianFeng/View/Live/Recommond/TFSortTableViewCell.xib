@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="TFSortTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-5J-Uja">
+                        <rect key="frame" x="19" y="12.5" width="337" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fxK-5J-Uja" secondAttribute="height" multiplier="337:100" id="A3D-68-OSy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业视角 | 直击海外风云" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SR-NW-AEB">
+                        <rect key="frame" x="98.5" y="53" width="177" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fxK-5J-Uja" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="337:375" id="880-KD-W2L"/>
+                    <constraint firstItem="fxK-5J-Uja" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LeC-lF-T8e"/>
+                    <constraint firstItem="4SR-NW-AEB" firstAttribute="centerX" secondItem="fxK-5J-Uja" secondAttribute="centerX" id="MED-DR-8yx"/>
+                    <constraint firstAttribute="bottom" secondItem="fxK-5J-Uja" secondAttribute="bottom" constant="13" id="YzM-KP-Tgq"/>
+                    <constraint firstItem="4SR-NW-AEB" firstAttribute="centerY" secondItem="fxK-5J-Uja" secondAttribute="centerY" id="shB-aM-BIm"/>
+                    <constraint firstItem="fxK-5J-Uja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12.5" id="tTk-Lw-Brk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="coverImg" destination="fxK-5J-Uja" id="tPk-08-j84"/>
+                <outlet property="sortName" destination="4SR-NW-AEB" id="tKz-NL-9jP"/>
+            </connections>
+            <point key="canvasLocation" x="74.5" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

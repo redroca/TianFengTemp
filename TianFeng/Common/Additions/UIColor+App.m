@@ -17,4 +17,5 @@
 + (UIColor *)GlobalBackgroundColr {
     return CORE_RGBCOLOR(242, 242, 242);
 }
+
 @end

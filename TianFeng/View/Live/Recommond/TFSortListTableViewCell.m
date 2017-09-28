@@ -1,25 +1,25 @@
 //
-//  RecommendAnalystsListTableViewCell.m
+//  TFSortListTableViewCell.m
 //  TianFeng
 //
-//  Created by 周恒 on 2017/9/26.
+//  Created by hades on 2017/9/28.
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "TFRecommendAnalystsListTableViewCell.h"
-#import "TFRecommendAnalystsTableViewCell.h"
+#import "TFSortListTableViewCell.h"
+#import "TFSortTableViewCell.h"
 
-@interface TFRecommendAnalystsListTableViewCell()<UITableViewDelegate,UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *RecommendAnalystsListTableView;
+@interface TFSortListTableViewCell () <UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
-@implementation TFRecommendAnalystsListTableViewCell
-
+@implementation TFSortListTableViewCell
 #pragma mark - Setter & Getter
 - (void)setDatasource:(NSArray *)datasource {
     _datasource = datasource;
     
-    [self.RecommendAnalystsListTableView reloadData];
+    [self.tableView reloadData];
 }
 
 #pragma mark – Initialization & Memory management methods
@@ -30,9 +30,9 @@
 
 #pragma mark – Private methods
 - (void)initInterface{
-    _RecommendAnalystsListTableView.dataSource = self;
-    _RecommendAnalystsListTableView.delegate = self;
-    _RecommendAnalystsListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark – Delegate
@@ -44,17 +44,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    TFRecommendAnalystsTableViewCell * cell = [TFRecommendAnalystsTableViewCell reusableCellDequeueTableView:self.RecommendAnalystsListTableView];
+    TFSortTableViewCell * cell = [TFSortTableViewCell reusableCellDequeueTableView:self.tableView];
     cell.selectionStyle = NO;
     [cell configureCellWithModel:self.datasource[indexPath.row]];
-    if (indexPath.row == 2) {
-        [cell hideBottonLine];
-    }
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 140;
+    return 125;
 }
 @end

@@ -19,6 +19,8 @@
 #import "TFCycleBannerView.h"
 #import "TFGoldAnalystsListTableViewCell.h"
 #import "TFCommonLiveTableViewCell.h"
+#import "TFRecommendAnalystsListTableViewCell.h"
+#import "TFSortListTableViewCell.h"
 
 //API
 
@@ -76,7 +78,6 @@
     
     self.tableView.tableFooterView = [UIView new];
     self.tableView.estimatedRowHeight = 250.f;
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
     [self setupBannerView];
@@ -89,7 +90,6 @@
 
 #pragma mark – Delegate
 #pragma mark --- UITableViewDelegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -100,26 +100,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //#warning Potentially incomplete method implementation.
-    return 4;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    switch (section) {
-        case 0:
-            return 1;
-            break;
-        case 1:
-            return 1;
-            break;
-        case 2:
-            return 3;
-            break;
-        default:
-            return 4;
-            break;
-    }
-    return 30;
+    return 4;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -128,19 +114,20 @@
         case 1:
             return [TFCommonLiveTableViewCell heightForCell];
             break;
-
+        case 2:
+            return 500;
         default:
-            return 44;
+            return 538;
             break;
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0 || indexPath.section == 1) {
+    if (indexPath.row == 0 || indexPath.row == 1) {
         TFCommonLiveTableViewCell *cell = [TFCommonLiveTableViewCell reusableCellDequeueTableView:self.tableView];
         NSString *name;
-        if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
             name = @"热门直播";
         } else {
             name = @"精彩预告";
@@ -153,26 +140,18 @@
         [cell configureWithModel:model];
         return cell;
     } else if (indexPath.row == 2) {
-        //Override
-        static NSString *CellIdentifier = @"Cell";
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        }
-        cell.backgroundColor = [UIColor grayColor];
-        
+        TFRecommendAnalystsListTableViewCell *cell = [TFRecommendAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        cell.ColumnsLabel.text = @"首席推荐";
+        cell.datasource = @[@{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"},
+                            @{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"},
+                            @{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"}];
         return cell;
     } else {
-        //Override
-        static NSString *CellIdentifier = @"Cell";
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        }
-        cell.backgroundColor = [UIColor grayColor];
-        
+        TFSortListTableViewCell *cell = [TFSortListTableViewCell reusableCellDequeueTableView:self.tableView];
+        cell.ColumnName.text = @"专题研究";
+        cell.datasource = @[@{@"coverImg" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"sortName":@"专业视角|直击海外市场"},
+  @{@"coverImg" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"sortName":@"专业视角|直击海外市场"},@{@"coverImg" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"sortName":@"专业视角|直击海外市场"},
+                            @{@"coverImg" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"sortName":@"专业视角|直击海外市场"}];
         return cell;
     }
 }

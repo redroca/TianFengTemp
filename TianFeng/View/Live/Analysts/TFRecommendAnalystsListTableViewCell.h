@@ -10,6 +10,7 @@
 #import "CommonAppHeaders.h"
 
 @interface TFRecommendAnalystsListTableViewCell : CoreXibTableViewCell
-@property (weak, nonatomic) IBOutlet UITableView *RecommendAnalystsListTableView;
+@property (weak, nonatomic) IBOutlet UILabel *ColumnsLabel;
 
+@property (strong, nonatomic)   NSArray *datasource;
 @end
