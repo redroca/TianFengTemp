@@ -9,10 +9,9 @@
 #import "RecommendAnalystsTableViewCell.h"
 
 @interface RecommendAnalystsTableViewCell()
-@property (weak, nonatomic) IBOutlet UIImageView *AnalystsHeaderImage;
-@property (weak, nonatomic) IBOutlet UILabel *AnalystsName;
-@property (weak, nonatomic) IBOutlet UILabel *AnalystsDescription;
-
+@property (weak, nonatomic) IBOutlet UIImageView *analystsHeaderImage;
+@property (weak, nonatomic) IBOutlet UILabel *analystsName;
+@property (weak, nonatomic) IBOutlet UILabel *analystsDescription;
 
 
 @end
