@@ -7,22 +7,37 @@
 //
 
 #import "TFGoldAnalystsListTableViewCell.h"
-#import "GoldAnalystsCollectionViewCell.h"
+#import "TFGoldAnalystsCollectionViewCell.h"
 
 @interface TFGoldAnalystsListTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UILabel *ColumnsName;
 
-
-
+@property (strong, nonatomic)   NSMutableArray  *datasource;
 @end
 
 
 @implementation TFGoldAnalystsListTableViewCell
 
+#pragma mark - Public
+- (void)configureWithModel:(NSDictionary *)model {
+    self.ColumnsName.text = model[@"name"];
+    self.datasource = model[@"data"];
+    
+    [self.goldAnalystsListCollection reloadData];
+}
+
 #pragma mark – Initialization & Memory management methods
 - (void)setup{
     [super setup];
     [self initInterface];
+}
+
+#pragma mark - Setter & Getter
+- (NSMutableArray *)datasource {
+    if (!_datasource) {
+        _datasource = [NSMutableArray array];
+    }
+    return _datasource;
 }
 
 #pragma mark – Private methods
@@ -37,7 +52,7 @@
     _goldAnalystsListCollection.collectionViewLayout = flowLayout;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     // 设置每个item的大小，
-    flowLayout.itemSize = CGSizeMake([GoldAnalystsCollectionViewCell widthOfCollectionViewCell], [GoldAnalystsCollectionViewCell heightOfCollectionViewCell]);
+    flowLayout.itemSize = CGSizeMake([TFGoldAnalystsCollectionViewCell widthOfCollectionViewCell], [TFGoldAnalystsCollectionViewCell heightOfCollectionViewCell]);
     // 设置列的最小间距
     flowLayout.minimumInteritemSpacing = 0;
     // 设置最小行间距
@@ -49,10 +64,11 @@
 
 #pragma mark – Delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+//    return self.datasource.count;
     return 5;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    GoldAnalystsCollectionViewCell * cell = [GoldAnalystsCollectionViewCell reusableCellDequeueCollectionView:_goldAnalystsListCollection forIndexPath:indexPath];
+    TFGoldAnalystsCollectionViewCell * cell = [TFGoldAnalystsCollectionViewCell reusableCellDequeueCollectionView:_goldAnalystsListCollection forIndexPath:indexPath];
     
     return cell;
 }

@@ -13,4 +13,8 @@
 + (UIColor *)LiveTitleNormalColor {
     return CORE_RGBCOLOR(51, 51, 51);
 }
+
++ (UIColor *)GlobalBackgroundColr {
+    return CORE_RGBCOLOR(242, 242, 242);
+}
 @end

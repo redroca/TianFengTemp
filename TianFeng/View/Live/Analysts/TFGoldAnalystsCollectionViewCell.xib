@@ -13,7 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GoldAnalystsCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TFGoldAnalystsCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="147" height="231"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -48,10 +48,11 @@
                 <constraint firstItem="tyi-ZU-ji9" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="9BK-II-a7p"/>
                 <constraint firstItem="SEy-5g-ep8" firstAttribute="leading" secondItem="tyi-ZU-ji9" secondAttribute="leading" id="Lql-04-7qV"/>
                 <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="J9O-U9-atA" secondAttribute="trailing" constant="5" id="Qkb-lR-NbN"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="592-tr-UVe" secondAttribute="bottom" constant="14.5" id="VZq-PM-l44"/>
                 <constraint firstItem="J9O-U9-atA" firstAttribute="top" secondItem="tyi-ZU-ji9" secondAttribute="bottom" constant="5" id="VmG-Fg-cVh"/>
                 <constraint firstItem="592-tr-UVe" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="Wiu-Dm-EfV"/>
                 <constraint firstItem="J9O-U9-atA" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="XU1-O3-Deo"/>
-                <constraint firstItem="592-tr-UVe" firstAttribute="top" secondItem="tyi-ZU-ji9" secondAttribute="bottom" constant="36" id="nj0-jj-XFp"/>
+                <constraint firstItem="592-tr-UVe" firstAttribute="top" secondItem="J9O-U9-atA" secondAttribute="bottom" constant="15" id="nbF-wX-RiV"/>
                 <constraint firstItem="592-tr-UVe" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="qk6-SU-Xtc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>

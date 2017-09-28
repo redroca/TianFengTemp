@@ -13,5 +13,5 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *goldAnalystsListCollection;
 
-
+- (void)configureWithModel:(NSDictionary *)model;
 @end

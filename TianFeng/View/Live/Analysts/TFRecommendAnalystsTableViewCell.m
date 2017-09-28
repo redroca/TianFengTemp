@@ -6,18 +6,18 @@
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "RecommendAnalystsTableViewCell.h"
+#import "TFRecommendAnalystsTableViewCell.h"
 
-@interface RecommendAnalystsTableViewCell()
-@property (weak, nonatomic) IBOutlet UIImageView *analystsHeaderImage;
-@property (weak, nonatomic) IBOutlet UILabel *analystsName;
-@property (weak, nonatomic) IBOutlet UILabel *analystsDescription;
+@interface TFRecommendAnalystsTableViewCell()
+@property (weak, nonatomic) IBOutlet UIImageView *AnalystsHeaderImage;
+@property (weak, nonatomic) IBOutlet UILabel *AnalystsName;
+@property (weak, nonatomic) IBOutlet UILabel *AnalystsDescription;
 
 
 @end
 
 
-@implementation RecommendAnalystsTableViewCell
+@implementation TFRecommendAnalystsTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

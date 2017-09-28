@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CommonAppHeaders.h"
 
-@interface GoldAnalystsCollectionViewCell : CoreXibCollectionViewCell
-
-
+@interface TFGoldAnalystsCollectionViewCell : CoreXibCollectionViewCell
 
 + (CGFloat)widthOfCollectionViewCell;
 + (CGFloat)heightOfCollectionViewCell;

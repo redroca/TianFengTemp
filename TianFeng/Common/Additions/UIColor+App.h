@@ -12,4 +12,6 @@
 
 #pragma mark App Colors
 + (UIColor *)LiveTitleNormalColor;
+
++ (UIColor *)GlobalBackgroundColr;
 @end

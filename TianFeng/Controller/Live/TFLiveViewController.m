@@ -216,14 +216,17 @@
 }
 
 - (CGRect)pagingViewControllerFrameAtIndex:(NSInteger)index {
+    CGFloat tabbarHeight = self.tabBarController.tabBar.sizeH;
+
     if (index) {
         CGFloat navigationBarHeight = 64.0f;
-        if (IS_IOS_11) {
+        
+        if (IS_IPHONEX) {
             navigationBarHeight = 88.0f;
         }
-        return CGRectMake(0, navigationBarHeight, self.view.sizeW, self.view.sizeH);
+        return CGRectMake(0, navigationBarHeight, self.view.sizeW, self.view.sizeH - navigationBarHeight - tabbarHeight);
     } else {
-        return self.view.frame;
+        return CGRectMake(0, 0, self.view.sizeW, self.view.sizeH - tabbarHeight);
     }
 }
 

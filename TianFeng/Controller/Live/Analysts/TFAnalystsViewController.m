@@ -8,9 +8,9 @@
 
 #import "TFAnalystsViewController.h"
 #import "TFGoldAnalystsListTableViewCell.h"
-#import "GoldAnalystsCollectionViewCell.h"
-#import "TFRecommendAnalystsListTableViewCell.h"
-#import "RecommendAnalystsTableViewCell.h"
+#import "TFGoldAnalystsCollectionViewCell.h"
+
+#import "TFRecommendAnalystsTableViewCell.h"
 
 @interface TFAnalystsViewController ()
 
@@ -83,7 +83,7 @@
         cell.selectionStyle = NO;
         return cell;
     } else {
-        RecommendAnalystsTableViewCell * cell = [RecommendAnalystsTableViewCell reusableCellDequeueTableView:self.tableView];
+        TFRecommendAnalystsTableViewCell * cell = [TFRecommendAnalystsTableViewCell reusableCellDequeueTableView:self.tableView];
         cell.selectionStyle = NO;
         return cell;
     }
