@@ -14,4 +14,5 @@
 + (UIColor *)LiveTitleNormalColor;
 
 + (UIColor *)GlobalBackgroundColr;
+
 @end

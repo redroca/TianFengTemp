@@ -67,6 +67,7 @@
         _pagingHeaderView.showItemLine = NO;
         _pagingHeaderView.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
         _pagingHeaderView.selectTextColor = [UIColor whiteColor];
+        _pagingHeaderView.lineColor = [UIColor clearColor];
         _pagingHeaderView.itemLinePosition = FFPagingViewItemLineTop;
     }
     return _pagingHeaderView;

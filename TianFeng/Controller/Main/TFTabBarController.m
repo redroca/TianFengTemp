@@ -35,20 +35,20 @@
     NSMutableArray *viewControllers = [NSMutableArray array];
     
     TFHomeViewController *homeVC = [[TFHomeViewController alloc] init];
-    [viewControllers addObject:[self configureViewController:homeVC title:@"首页" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
+    [viewControllers addObject:[self configureViewController:homeVC title:@"首页" normalImage:[UIImage imageNamed:@"tab_home_nor"] highlightedImage:[UIImage imageNamed:@"tab_home_pre"]]];
     
     TFMineViewController *mineVC = [[TFMineViewController alloc] init];
-    [viewControllers addObject:[self configureViewController:mineVC title:@"我的" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
+    [viewControllers addObject:[self configureViewController:mineVC title:@"我的" normalImage:[UIImage imageNamed:@"tab_mine_nor"] highlightedImage:[UIImage imageNamed:@"tab_mine_pre"]]];
     
     TFCategoryViewController *categoryVC = [[TFCategoryViewController alloc] init];
-    [viewControllers addObject:[self configureViewController:categoryVC title:@"分类" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
+    [viewControllers addObject:[self configureViewController:categoryVC title:@"分类" normalImage:[UIImage imageNamed:@"tab_classify_nor"] highlightedImage:[UIImage imageNamed:@"tab_classify_pre"]]];
     
     TFLiveViewController *liveVC = [[TFLiveViewController alloc] init];
-    TFNavigationController *nav = (TFNavigationController *)[self configureViewController:liveVC title:@"直播" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]];
+    TFNavigationController *nav = (TFNavigationController *)[self configureViewController:liveVC title:@"直播" normalImage:[UIImage imageNamed:@"tab_live_nor"] highlightedImage:[UIImage imageNamed:@"tab_live_pre"]];
     [viewControllers addObject:nav];
     
     TFAccountViewController *accountVC = [[TFAccountViewController alloc] init];
-    [viewControllers addObject:[self configureViewController:accountVC title:@"账户" normalImage:[UIImage imageNamed:@""] highlightedImage:[UIImage imageNamed:@""]]];
+    [viewControllers addObject:[self configureViewController:accountVC title:@"账户" normalImage:[UIImage imageNamed:@"tab_id_nor"] highlightedImage:[UIImage imageNamed:@"tab_id_pre"]]];
     
     self.viewControllers = viewControllers;
 }

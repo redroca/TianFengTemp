@@ -64,9 +64,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="analystsDescription" destination="tv9-IW-z8q" id="qs2-NR-hbG"/>
-                <outlet property="analystsHeaderImage" destination="fzD-q8-VdI" id="jM3-Ie-QCd"/>
-                <outlet property="analystsName" destination="vQr-fn-63b" id="UhG-ps-2RO"/>
+                <outlet property="AnalystsBottomLine" destination="Cw6-85-Xnd" id="78j-wd-IPB"/>
+                <outlet property="AnalystsDescription" destination="tv9-IW-z8q" id="UCV-28-qzm"/>
+                <outlet property="AnalystsHeaderImage" destination="fzD-q8-VdI" id="d0z-xH-lNb"/>
+                <outlet property="AnalystsName" destination="vQr-fn-63b" id="0Pg-AD-WRN"/>
             </connections>
             <point key="canvasLocation" x="27.5" y="-21"/>
         </tableViewCell>

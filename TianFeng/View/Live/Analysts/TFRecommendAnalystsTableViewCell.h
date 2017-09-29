@@ -10,5 +10,7 @@
 #import "CommonAppHeaders.h"
 
 @interface TFRecommendAnalystsTableViewCell : CoreXibTableViewCell
+- (void)configureCellWithModel:(NSDictionary *)model;
 
+- (void)hideBottonLine;
 @end
