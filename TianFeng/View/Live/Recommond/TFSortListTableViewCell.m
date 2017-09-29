@@ -33,6 +33,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.scrollEnabled = NO;
 }
 
 #pragma mark – Delegate

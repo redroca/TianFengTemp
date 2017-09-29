@@ -15,5 +15,4 @@
 
 + (UIColor *)GlobalBackgroundColr;
 
-+ (UIColor *)GlobalMainTextColor;
 @end

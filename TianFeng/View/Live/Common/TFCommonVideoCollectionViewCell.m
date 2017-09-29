@@ -44,7 +44,7 @@
     if (IS_IPHONEX) {
         return 162.0f;
     }
-    return (SCREENHEIGHT) * (162 / 667.0);
+    return (SCREENHEIGHT) * (163 / 667.0);
 }
 
 //股票讲堂图片尺寸330*220
@@ -53,9 +53,9 @@
 }
 + (CGFloat)heightOfStocksVedioCollectionViewCell {
     if (IS_IPHONEX) {
-        return 202.f;
+        return 178.f;
     }
-    return (SCREENHEIGHT) * (202 / 667.0);
+    return (SCREENHEIGHT) * (178 / 667.0);
 }
 
 @end

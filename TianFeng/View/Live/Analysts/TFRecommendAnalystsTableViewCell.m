@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsName;
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsDescription;
 @property (weak, nonatomic) IBOutlet UIView *AnalystsBottomLine;
-
 @end
 
 

@@ -27,7 +27,7 @@
                         </constraints>
                     </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3XW-ZN-hjD">
-                        <rect key="frame" x="0.0" y="57" width="374" height="192.5"/>
+                        <rect key="frame" x="0.0" y="62" width="374" height="187.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vXe-cf-Mls">
                             <size key="itemSize" width="50" height="50"/>
@@ -48,7 +48,7 @@
                     <constraint firstItem="FMt-rX-fl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5iO-Qy-AVZ"/>
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="BaP-Qc-QUT"/>
                     <constraint firstAttribute="trailing" secondItem="FMt-rX-fl7" secondAttribute="trailing" id="HB8-Zp-DNL"/>
-                    <constraint firstItem="3XW-ZN-hjD" firstAttribute="top" secondItem="3oh-ZN-EH7" secondAttribute="bottom" constant="15" id="K8H-tA-Yq1"/>
+                    <constraint firstItem="3XW-ZN-hjD" firstAttribute="top" secondItem="3oh-ZN-EH7" secondAttribute="bottom" constant="20" id="K8H-tA-Yq1"/>
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ia8-kj-2B7"/>
                     <constraint firstItem="3XW-ZN-hjD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jGh-VL-2vk"/>
                     <constraint firstItem="FMt-rX-fl7" firstAttribute="top" secondItem="3XW-ZN-hjD" secondAttribute="bottom" id="wpe-X6-Vah"/>

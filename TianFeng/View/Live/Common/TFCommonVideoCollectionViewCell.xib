@@ -14,20 +14,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4tj-de-WTQ" customClass="TFCommonVideoCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="162"/>
+            <rect key="frame" x="0.0" y="0.0" width="158" height="182"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="162"/>
+                <rect key="frame" x="0.0" y="0.0" width="158" height="182"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EBQ-ra-84r">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="105.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="EBQ-ra-84r" secondAttribute="height" multiplier="3:2" id="7by-aq-DYe"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-R6-gcf">
-                        <rect key="frame" x="0.0" y="110" width="150" height="28"/>
+                        <rect key="frame" x="0.0" y="115.5" width="158" height="28"/>
                         <attributedString key="attributedText">
                             <fragment content="读要闻瞄准货币基金的一枪打在了同业负债身">
                                 <attributes>
@@ -40,19 +40,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="刘芳芳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtS-Ns-iJT">
-                        <rect key="frame" x="0.0" y="145.5" width="40" height="16"/>
+                        <rect key="frame" x="0.0" y="151" width="40" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.73725490199999999" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日直播 16:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es1-D8-k0a">
-                        <rect key="frame" x="55" y="145.5" width="95" height="16"/>
+                        <rect key="frame" x="55" y="151" width="103" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.73725490199999999" green="0.73725490199999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-Xe-aJX">
-                        <rect key="frame" x="7.5" y="70.5" width="65" height="25"/>
+                        <rect key="frame" x="7.5" y="76" width="65" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="65" id="2JB-nC-tU1"/>
                             <constraint firstAttribute="height" constant="25" id="z1R-Nc-gOo"/>
@@ -77,7 +77,7 @@
                 <constraint firstItem="wUl-Xe-aJX" firstAttribute="leading" secondItem="EBQ-ra-84r" secondAttribute="leading" constant="7.5" id="zob-V5-Uvw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="LBt-Kb-1a3"/>
-            <size key="customSize" width="150" height="174.5"/>
+            <size key="customSize" width="158" height="194.5"/>
             <connections>
                 <outlet property="VedioCoverImage" destination="EBQ-ra-84r" id="tbe-OJ-7PG"/>
                 <outlet property="VedioName" destination="gtS-Ns-iJT" id="1v6-zb-kib"/>
@@ -86,7 +86,7 @@
                 <outlet property="vedioStatusImage" destination="wUl-Xe-aJX" id="vfv-O9-M8Y"/>
                 <outlet property="widthOfStatusImage" destination="2JB-nC-tU1" id="7Da-d5-HHl"/>
             </connections>
-            <point key="canvasLocation" x="-188" y="44"/>
+            <point key="canvasLocation" x="-184" y="54"/>
         </collectionViewCell>
     </objects>
 </document>

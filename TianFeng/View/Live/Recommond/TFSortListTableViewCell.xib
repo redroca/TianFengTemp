@@ -40,18 +40,18 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fyt-UD-xhG">
-                                <rect key="frame" x="0.0" y="54" width="376" height="281"/>
+                                <rect key="frame" x="0.0" y="54" width="376" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fyt-UD-xhG" firstAttribute="top" secondItem="1Pw-LO-beF" secondAttribute="bottom" id="13n-VW-9mQ"/>
                             <constraint firstItem="1Pw-LO-beF" firstAttribute="leading" secondItem="n6d-Kn-kx7" secondAttribute="leading" id="9BU-Pe-BR8"/>
                             <constraint firstItem="Fyt-UD-xhG" firstAttribute="leading" secondItem="1Pw-LO-beF" secondAttribute="leading" id="H83-Ek-CSv"/>
                             <constraint firstItem="1Pw-LO-beF" firstAttribute="top" secondItem="n6d-Kn-kx7" secondAttribute="top" id="ISF-7y-m7L"/>
                             <constraint firstAttribute="trailing" secondItem="1Pw-LO-beF" secondAttribute="trailing" id="PNl-td-fjh"/>
-                            <constraint firstAttribute="bottom" secondItem="Fyt-UD-xhG" secondAttribute="bottom" constant="5" id="WHb-8H-uEn"/>
+                            <constraint firstAttribute="bottom" secondItem="Fyt-UD-xhG" secondAttribute="bottom" constant="34" id="WHb-8H-uEn"/>
                             <constraint firstItem="Fyt-UD-xhG" firstAttribute="trailing" secondItem="1Pw-LO-beF" secondAttribute="trailing" id="pYg-qr-CSq"/>
                         </constraints>
                     </view>
