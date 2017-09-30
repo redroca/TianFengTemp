@@ -16,6 +16,7 @@
 #import "TFStocksViewController.h"
 #import "TFRoomViewController.h"
 #import "FFPagingViewController.h"
+#import "TFSearchViewController.h"
 
 //Cells
 
@@ -89,12 +90,18 @@
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, kHeaderViewTop)];
     titleView.backgroundColor = [UIColor clearColor];
     
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, kHeaderViewTop - 1, SCREENWIDTH, 1)];
+    lineView.backgroundColor = [UIColor GlobalBackgroundColr];
+    
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, kHeaderViewTop)];
     [leftButton addTarget:self action:@selector(searchAction:) forControlEvents:UIControlEventTouchUpInside];
     [leftButton setTitle:@"搜索" forState:UIControlStateNormal];
     [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
     leftButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
+    
+//    UIImageView *searchImage = [[UIImageView alloc] initWithFrame:CGRectMake(16, 0, 16, 16)];
+//    searchImage.image = [UIImage imageNamed:@""];
     
     WS(weakSelf);
     self.pagingHeaderView.pagingViewItemClickHandle = ^(FFPagingHeaderView *headerView, NSString *title, NSInteger currentIndex) {
@@ -120,6 +127,7 @@
     self.pagingHeaderView.titles = self.titlesData;
     
     [titleView addSubview:leftButton];
+    [titleView addSubview:lineView];
     [titleView addSubview:self.pagingHeaderView];
     [self.navigationController.navigationBar addSubview:titleView];
     [self.view addSubview:self.pagingViewController.view];
@@ -158,7 +166,8 @@
 
 #pragma mark – Target action methods
 - (void)searchAction:(UIButton *)btn {
-
+    TFSearchViewController *searchVC = [[TFSearchViewController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
 }
 
 #pragma mark – Request service methods

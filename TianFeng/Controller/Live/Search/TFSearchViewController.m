@@ -9,29 +9,53 @@
 #import "TFSearchViewController.h"
 
 @interface TFSearchViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 
 @end
 
 @implementation TFSearchViewController
 
+#pragma mark - Setters/Getters
+
+#pragma mark – Override properties
+
+#pragma mark – Class methods
+
+#pragma mark – Public methods
+
+#pragma mark – Private methods
+
+#pragma mark - Override super methods
+
+#pragma mark – Target action methods
+- (IBAction)backAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+#pragma mark – Request service methods
+
+#pragma mark – Initialization & Memory management methods
+
+#pragma mark – View lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+    self.tabBarController.tabBar.hidden = NO;
 }
-*/
+
+
 
 @end
