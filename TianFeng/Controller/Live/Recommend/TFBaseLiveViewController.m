@@ -32,15 +32,15 @@
 - (void)setupTitleWithLiveType {
     switch (self.liveType) {
         case kLiveIsLiving: {
-            self.navigationController.title = @"热门直播";
+            self.title = @"热门直播";
         }
             break;
         case kLiveAdvanceNotice: {
-            self.navigationController.title = @"直播预告";
+            self.title = @"直播预告";
         }
             break;
         default:
-            self.navigationController.title = @"精彩回放";
+            self.title = @"精彩回放";
             break;
     }
 }

@@ -18,6 +18,9 @@
 		281686AB1F789C91004126C3 /* TFSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281686A91F789C91004126C3 /* TFSearchViewController.xib */; };
 		281686AF1F789CC0004126C3 /* TFRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281686AD1F789CC0004126C3 /* TFRoomViewController.m */; };
 		281686B01F789CC0004126C3 /* TFRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281686AE1F789CC0004126C3 /* TFRoomViewController.xib */; };
+		281C57D91F8B491900737B85 /* TFCommonLiveListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28038A301F7D0A2500CCA281 /* TFCommonLiveListTableViewCell.xib */; };
+		281C57DD1F8B549500737B85 /* TFAnalystsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281C57DB1F8B549500737B85 /* TFAnalystsListViewController.m */; };
+		281C57DE1F8B549500737B85 /* TFAnalystsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281C57DC1F8B549500737B85 /* TFAnalystsListViewController.xib */; };
 		281E15851F73C46A00734744 /* CoreCache+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF601F7366BF0007A184 /* CoreCache+App.m */; };
 		281E15861F73C46E00734744 /* CoreStore+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF621F7366BF0007A184 /* CoreStore+App.m */; };
 		281E15871F73C47200734744 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CAF641F7366BF0007A184 /* UIColor+App.m */; };
@@ -93,6 +96,9 @@
 		281686AC1F789CC0004126C3 /* TFRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRoomViewController.h; sourceTree = "<group>"; };
 		281686AD1F789CC0004126C3 /* TFRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRoomViewController.m; sourceTree = "<group>"; };
 		281686AE1F789CC0004126C3 /* TFRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRoomViewController.xib; sourceTree = "<group>"; };
+		281C57DA1F8B549500737B85 /* TFAnalystsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFAnalystsListViewController.h; sourceTree = "<group>"; };
+		281C57DB1F8B549500737B85 /* TFAnalystsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFAnalystsListViewController.m; sourceTree = "<group>"; };
+		281C57DC1F8B549500737B85 /* TFAnalystsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFAnalystsListViewController.xib; sourceTree = "<group>"; };
 		282AE6761F7C93B10030693E /* TFCommonVideoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFCommonVideoCollectionViewCell.h; sourceTree = "<group>"; };
 		282AE6771F7C93B10030693E /* TFCommonVideoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFCommonVideoCollectionViewCell.m; sourceTree = "<group>"; };
 		282AE6781F7C93B10030693E /* TFCommonVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFCommonVideoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -503,6 +509,9 @@
 				281686981F789BBF004126C3 /* TFAnalystsViewController.h */,
 				281686991F789BBF004126C3 /* TFAnalystsViewController.m */,
 				2816869A1F789BBF004126C3 /* TFAnalystsViewController.xib */,
+				281C57DA1F8B549500737B85 /* TFAnalystsListViewController.h */,
+				281C57DB1F8B549500737B85 /* TFAnalystsListViewController.m */,
+				281C57DC1F8B549500737B85 /* TFAnalystsListViewController.xib */,
 			);
 			path = Analysts;
 			sourceTree = "<group>";
@@ -689,6 +698,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281C57D91F8B491900737B85 /* TFCommonLiveListTableViewCell.xib in Resources */,
+				281C57DE1F8B549500737B85 /* TFAnalystsListViewController.xib in Resources */,
 				28CB6C231F7DE81B00122AEA /* TFRecommendAnalystsListTableViewCell.xib in Resources */,
 				284CAEE41F735D770007A184 /* Assets.xcassets in Resources */,
 				282AE67A1F7C93B10030693E /* TFCommonVideoCollectionViewCell.xib in Resources */,
@@ -793,6 +804,7 @@
 				282AE6791F7C93B10030693E /* TFCommonVideoCollectionViewCell.m in Sources */,
 				283C99BB1F78E78C00EDD8B5 /* TFNavigationBarManager.m in Sources */,
 				281E15851F73C46A00734744 /* CoreCache+App.m in Sources */,
+				281C57DD1F8B549500737B85 /* TFAnalystsListViewController.m in Sources */,
 				286A87E61F73A9B50022825D /* TFNavigationController.m in Sources */,
 				9EEA08DF1F78AEB000B469F3 /* TFGoldAnalystsCollectionViewCell.m in Sources */,
 				9EEA08EF1F7905E000B469F3 /* TFStocksVedioListCollectionViewCell.m in Sources */,

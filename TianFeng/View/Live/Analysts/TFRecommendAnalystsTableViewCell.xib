@@ -27,9 +27,9 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQr-fn-63b">
-                        <rect key="frame" x="139.5" y="43" width="220.5" height="18"/>
+                        <rect key="frame" x="139.5" y="37" width="220.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果你不能简述你的想法说明你还不够了解它如果你不能简述你的想法说明你还不够了解它" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-IW-z8q">
@@ -47,7 +47,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vQr-fn-63b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="4FE-Fv-D0K"/>
+                    <constraint firstItem="vQr-fn-63b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="4FE-Fv-D0K"/>
                     <constraint firstAttribute="trailing" secondItem="Cw6-85-Xnd" secondAttribute="trailing" constant="22" id="9lx-OE-i7z"/>
                     <constraint firstItem="vQr-fn-63b" firstAttribute="leading" secondItem="fzD-q8-VdI" secondAttribute="trailing" constant="10" id="DWW-52-goV"/>
                     <constraint firstAttribute="bottom" secondItem="tv9-IW-z8q" secondAttribute="bottom" constant="10" id="EPH-eS-dHU"/>
