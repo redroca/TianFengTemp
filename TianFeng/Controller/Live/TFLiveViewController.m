@@ -36,6 +36,9 @@
 @property(nonatomic, strong)    NSArray                    *titlesData;
 
 @property(nonatomic, assign)    BOOL                       scrollNeedToChangeColor;
+
+@property(nonatomic, strong)    UIImageView                *searchImage;
+
 @end
 
 @implementation TFLiveViewController
@@ -68,7 +71,7 @@
         _pagingHeaderView.showItemLine = NO;
         _pagingHeaderView.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
         _pagingHeaderView.selectTextColor = [UIColor whiteColor];
-        _pagingHeaderView.lineColor = [UIColor clearColor];
+        _pagingHeaderView.lineColor = [UIColor GlobalBackgroundColr];
         _pagingHeaderView.itemLinePosition = FFPagingViewItemLineTop;
     }
     return _pagingHeaderView;
@@ -93,29 +96,36 @@
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, kHeaderViewTop - 1, SCREENWIDTH, 1)];
     lineView.backgroundColor = [UIColor GlobalBackgroundColr];
     
+    //searchButton
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, kHeaderViewTop)];
     [leftButton addTarget:self action:@selector(searchAction:) forControlEvents:UIControlEventTouchUpInside];
-    [leftButton setTitle:@"搜索" forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
-    leftButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
+    [leftButton setTitle:@"" forState:UIControlStateNormal];
+//    [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+//    [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+//    leftButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
     
-//    UIImageView *searchImage = [[UIImageView alloc] initWithFrame:CGRectMake(16, 0, 16, 16)];
-//    searchImage.image = [UIImage imageNamed:@""];
+    UIImageView *searchImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 16, 16)];
+    searchImage.image = [UIImage imageNamed:@"icon_search"];
+    self.searchImage = searchImage;
+    searchImage.center = leftButton.center;
+    [titleView addSubview:searchImage];
     
     WS(weakSelf);
     self.pagingHeaderView.pagingViewItemClickHandle = ^(FFPagingHeaderView *headerView, NSString *title, NSInteger currentIndex) {
         weakSelf.pagingViewController.seletedIndex = currentIndex;
         if (currentIndex) {
-            headerView.textColor = [UIColor LiveTitleNormalColor];
+            headerView.textColor = [UIColor LiveTitleGrayColor];
             headerView.selectTextColor = [UIColor blackColor];
             [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
             [leftButton setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+            weakSelf.searchImage.image = [UIImage imageNamed:@"icon_search_black"];
         } else {
             if (weakSelf.scrollNeedToChangeColor) {
-                headerView.textColor = [UIColor LiveTitleNormalColor];
+                weakSelf.searchImage.image = [UIImage imageNamed:@"icon_search_black"];
+                headerView.textColor = [UIColor LiveTitleGrayColor];
                 headerView.selectTextColor = [UIColor blackColor];
             } else {
+                weakSelf.searchImage.image = [UIImage imageNamed:@"icon_search"];
                 headerView.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
                 headerView.selectTextColor = [UIColor whiteColor];
             }            
@@ -243,12 +253,14 @@
 #pragma mark - TFRecommondViewControllerDelegate
 - (void)scrollViewContentOffsetY:(float)contentOffsetY {
     if (contentOffsetY > [TFNavigationBarManager sharedManager].fullAlphaOffset/2.0) {
-        self.pagingHeaderView.textColor = [UIColor LiveTitleNormalColor];
+        self.pagingHeaderView.textColor = [UIColor LiveTitleGrayColor];
         self.pagingHeaderView.selectTextColor = [UIColor blackColor];
+        self.searchImage.image = [UIImage imageNamed:@"icon_search_black"];
         self.scrollNeedToChangeColor = YES;
     } else {
-        self.pagingHeaderView.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
+        self.pagingHeaderView.textColor = [UIColor LiveTitleGrayColor];
         self.pagingHeaderView.selectTextColor = [UIColor whiteColor];
+        self.searchImage.image = [UIImage imageNamed:@"icon_search"];
         self.scrollNeedToChangeColor = NO;
     }
 }

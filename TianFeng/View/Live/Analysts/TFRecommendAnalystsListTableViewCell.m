@@ -35,6 +35,10 @@
     _RecommendAnalystsListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
+- (IBAction)action_more:(id)sender {
+}
+
+
 #pragma mark – Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (!_datasource) {

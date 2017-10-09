@@ -10,8 +10,7 @@
 #import "TFGoldAnalystsListTableViewCell.h"
 #import "TFGoldAnalystsCollectionViewCell.h"
 
-#import "TFRecommendAnalystsTableViewCell.h"
-
+#import "TFRecommendAnalystsListTableViewCell.h"
 @interface TFAnalystsViewController ()
 
 @end
@@ -69,11 +68,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //#warning Incomplete method implementation.
-    if (section == 2) {
-        return 5;
-    } else {
-        return 1;
-    }
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -83,8 +78,11 @@
         cell.selectionStyle = NO;
         return cell;
     } else {
-        TFRecommendAnalystsTableViewCell * cell = [TFRecommendAnalystsTableViewCell reusableCellDequeueTableView:self.tableView];
-        cell.selectionStyle = NO;
+        TFRecommendAnalystsListTableViewCell *cell = [TFRecommendAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+        cell.ColumnsLabel.text = @"首席推荐";
+        cell.datasource = @[@{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"},
+                            @{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"},
+                            @{@"AnalystsHeaderImage" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"AnalystsName":@"张三", @"AnalystsDescription":@"额胜多负少的冯绍峰大声道"}];
         return cell;
     }
 }
@@ -92,7 +90,7 @@
 //cell 高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 2) {
-        return 140;
+        return 500;
     } else {
         return 273.5;
     }

@@ -14,8 +14,16 @@
     return CORE_RGBCOLOR(51, 51, 51);
 }
 
++ (UIColor *)LiveTitleGrayColor {
+    return CORE_RGBCOLOR(188, 188, 188);
+}
+
 + (UIColor *)GlobalBackgroundColr {
     return CORE_RGBCOLOR(242, 242, 242);
+}
+
++ (UIColor *)GlobalTabBarItemSelectedColor {
+    return CORE_RGBCOLOR(255, 164, 56);
 }
 
 @end

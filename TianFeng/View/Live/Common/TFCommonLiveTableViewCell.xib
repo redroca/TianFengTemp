@@ -42,15 +42,44 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afD-8J-SSK">
+                        <rect key="frame" x="309" y="21.5" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="pYM-Uj-BYo">
+                        <rect key="frame" x="345" y="26" width="6" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="9zd-va-d6y"/>
+                            <constraint firstAttribute="width" constant="6" id="CCp-yf-9wR"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-QS-gqU">
+                        <rect key="frame" x="304" y="13.5" width="52" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="YjP-wk-Cog"/>
+                        </constraints>
+                        <connections>
+                            <action selector="action_more:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hAI-tW-nZj"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="FMt-rX-fl7" secondAttribute="bottom" id="5ff-bE-Xlk"/>
                     <constraint firstItem="FMt-rX-fl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5iO-Qy-AVZ"/>
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="BaP-Qc-QUT"/>
+                    <constraint firstItem="xfh-QS-gqU" firstAttribute="leading" secondItem="afD-8J-SSK" secondAttribute="leading" constant="-5" id="F4h-AY-elp"/>
                     <constraint firstAttribute="trailing" secondItem="FMt-rX-fl7" secondAttribute="trailing" id="HB8-Zp-DNL"/>
+                    <constraint firstAttribute="trailing" secondItem="pYM-Uj-BYo" secondAttribute="trailing" constant="23" id="I1z-vx-UmW"/>
                     <constraint firstItem="3XW-ZN-hjD" firstAttribute="top" secondItem="3oh-ZN-EH7" secondAttribute="bottom" constant="20" id="K8H-tA-Yq1"/>
+                    <constraint firstItem="xfh-QS-gqU" firstAttribute="trailing" secondItem="pYM-Uj-BYo" secondAttribute="trailing" constant="5" id="Lhc-YB-P85"/>
+                    <constraint firstItem="xfh-QS-gqU" firstAttribute="centerY" secondItem="3oh-ZN-EH7" secondAttribute="centerY" id="TjN-KD-723"/>
+                    <constraint firstItem="pYM-Uj-BYo" firstAttribute="centerY" secondItem="3oh-ZN-EH7" secondAttribute="centerY" id="gkg-Jo-6MP"/>
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ia8-kj-2B7"/>
                     <constraint firstItem="3XW-ZN-hjD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jGh-VL-2vk"/>
+                    <constraint firstItem="afD-8J-SSK" firstAttribute="centerY" secondItem="3oh-ZN-EH7" secondAttribute="centerY" id="npZ-fw-jxK"/>
+                    <constraint firstItem="afD-8J-SSK" firstAttribute="trailing" secondItem="pYM-Uj-BYo" secondAttribute="leading" constant="-5" id="teR-F7-mZa"/>
                     <constraint firstItem="FMt-rX-fl7" firstAttribute="top" secondItem="3XW-ZN-hjD" secondAttribute="bottom" id="wpe-X6-Vah"/>
                     <constraint firstAttribute="trailing" secondItem="3XW-ZN-hjD" secondAttribute="trailing" id="wru-Oe-gJp"/>
                 </constraints>
@@ -63,4 +92,7 @@
             <point key="canvasLocation" x="67" y="198"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon_more" width="8" height="14"/>
+    </resources>
 </document>

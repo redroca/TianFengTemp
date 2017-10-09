@@ -10,6 +10,7 @@
 
 @interface TFSearchViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UITextField *searchTextFirld;
 
 
 @end
@@ -33,6 +34,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)action_toSearchResult:(id)sender {
+}
 
 #pragma mark – Request service methods
 
