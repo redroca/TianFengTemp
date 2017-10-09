@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,12 +34,26 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-Xz-1aM">
+                        <rect key="frame" x="275" y="21" width="39" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="更多" image="icon_more">
+                            <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moreAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zg3-2L-c43"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="pj0-Xz-1aM" firstAttribute="centerY" secondItem="gSd-RW-IGF" secondAttribute="centerY" id="Iuk-rw-JcO"/>
                     <constraint firstItem="gSd-RW-IGF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="T5S-wF-cDx"/>
                     <constraint firstItem="cpC-2h-eOc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a6i-6Q-5Q6"/>
                     <constraint firstItem="gSd-RW-IGF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="bvy-ZB-Ety"/>
                     <constraint firstAttribute="trailing" secondItem="cpC-2h-eOc" secondAttribute="trailing" id="eSl-h7-uPO"/>
+                    <constraint firstAttribute="trailing" secondItem="pj0-Xz-1aM" secondAttribute="trailing" constant="23" id="ind-vG-7EI"/>
                     <constraint firstItem="cpC-2h-eOc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="60" id="jwK-yV-stU"/>
                     <constraint firstAttribute="bottom" secondItem="cpC-2h-eOc" secondAttribute="bottom" id="xNk-vV-dXg"/>
                 </constraints>
@@ -53,4 +66,7 @@
             <point key="canvasLocation" x="42.5" y="170"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon_more" width="8" height="14"/>
+    </resources>
 </document>

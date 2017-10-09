@@ -29,6 +29,8 @@
 
 @implementation ClassName
 
+#pragma mark - Setup
+
 #pragma mark - Setters/Getters
 
 #pragma mark – Override properties

@@ -31,11 +31,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcS-6K-OXv">
+                                        <rect key="frame" x="314" y="21" width="39" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="更多" image="icon_more">
+                                            <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moreAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="otC-pD-6k0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="LcS-6K-OXv" firstAttribute="centerY" secondItem="5kH-ed-1eR" secondAttribute="centerY" id="NkW-aW-QEf"/>
                                     <constraint firstItem="5kH-ed-1eR" firstAttribute="leading" secondItem="1Pw-LO-beF" secondAttribute="leading" constant="15" id="cFb-Z2-OqS"/>
                                     <constraint firstItem="5kH-ed-1eR" firstAttribute="top" secondItem="1Pw-LO-beF" secondAttribute="top" constant="20" id="hU6-gp-iUs"/>
+                                    <constraint firstAttribute="trailing" secondItem="LcS-6K-OXv" secondAttribute="trailing" constant="23" id="mWI-XD-gBV"/>
                                     <constraint firstAttribute="height" constant="53.5" id="vGD-Y8-RFL"/>
                                 </constraints>
                             </view>
@@ -71,4 +85,7 @@
             <point key="canvasLocation" x="103" y="-29"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon_more" width="8" height="14"/>
+    </resources>
 </document>

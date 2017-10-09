@@ -51,9 +51,13 @@
 		286A87EA1F73AB2A0022825D /* TFCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87E81F73AB2A0022825D /* TFCategoryViewController.m */; };
 		286A87EB1F73AB2A0022825D /* TFCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */; };
 		286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87ED1F73ADBE0022825D /* TFTabBarController.m */; };
+		2890CB3B1F7F3CC300ED8CFB /* TFNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2890CB3A1F7F3CC300ED8CFB /* TFNavigationBar.m */; };
 		28ABEE6D1F75142800A5BC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABEE6A1F7512DF00A5BC0E /* main.m */; };
 		28CB6C221F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB6C201F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m */; };
 		28CB6C231F7DE81B00122AEA /* TFRecommendAnalystsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CB6C211F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.xib */; };
+		28CB6C281F7DF35700122AEA /* TFBaseLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB6C261F7DF35700122AEA /* TFBaseLiveViewController.m */; };
+		28CB6C291F7DF35700122AEA /* TFBaseLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CB6C271F7DF35700122AEA /* TFBaseLiveViewController.xib */; };
+		28CB6C2C1F7E316B00122AEA /* UIViewController+TFExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB6C2B1F7E316B00122AEA /* UIViewController+TFExtention.m */; };
 		5890CD85CC7CF90F8DA26B65 /* libPods-TianFeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */; };
 		9E330A2E1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E330A2C1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.m */; };
 		9E330A2F1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E330A2D1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.xib */; };
@@ -151,6 +155,8 @@
 		286A87E91F73AB2A0022825D /* TFCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFCategoryViewController.xib; sourceTree = "<group>"; };
 		286A87EC1F73ADBE0022825D /* TFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFTabBarController.h; sourceTree = "<group>"; };
 		286A87ED1F73ADBE0022825D /* TFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFTabBarController.m; sourceTree = "<group>"; };
+		2890CB391F7F3CC300ED8CFB /* TFNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFNavigationBar.h; sourceTree = "<group>"; };
+		2890CB3A1F7F3CC300ED8CFB /* TFNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNavigationBar.m; sourceTree = "<group>"; };
 		28ABEE691F7512DF00A5BC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TianFeng/Info.plist; sourceTree = SOURCE_ROOT; };
 		28ABEE6A1F7512DF00A5BC0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TianFeng/main.m; sourceTree = SOURCE_ROOT; };
 		28ABEE6B1F7512DF00A5BC0E /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CodeStyle.txt; path = TianFeng/CodeStyle.txt; sourceTree = SOURCE_ROOT; };
@@ -158,6 +164,11 @@
 		28CB6C1F1F7DE50300122AEA /* TFRecommendAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TFRecommendAnalystsListTableViewCell.h; path = "../../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/e1ca0b783cc13ac2ccf64d65399dcc62/Message/MessageTemp/5e4f59159df050c4506b1559df61c640/File/TFRecommendAnalystsListTableViewCell.h"; sourceTree = "<group>"; };
 		28CB6C201F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TFRecommendAnalystsListTableViewCell.m; path = "../../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/e1ca0b783cc13ac2ccf64d65399dcc62/Message/MessageTemp/5e4f59159df050c4506b1559df61c640/File/TFRecommendAnalystsListTableViewCell.m"; sourceTree = "<group>"; };
 		28CB6C211F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRecommendAnalystsListTableViewCell.xib; sourceTree = "<group>"; };
+		28CB6C251F7DF35700122AEA /* TFBaseLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFBaseLiveViewController.h; sourceTree = "<group>"; };
+		28CB6C261F7DF35700122AEA /* TFBaseLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFBaseLiveViewController.m; sourceTree = "<group>"; };
+		28CB6C271F7DF35700122AEA /* TFBaseLiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFBaseLiveViewController.xib; sourceTree = "<group>"; };
+		28CB6C2A1F7E316B00122AEA /* UIViewController+TFExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFExtention.h"; sourceTree = "<group>"; };
+		28CB6C2B1F7E316B00122AEA /* UIViewController+TFExtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TFExtention.m"; sourceTree = "<group>"; };
 		896B9A8084000121305DE575 /* Pods-TianFeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.release.xcconfig"; sourceTree = "<group>"; };
 		907D2E25F1F347A7E7E93640 /* Pods-TianFeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TianFeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TianFeng/Pods-TianFeng.debug.xcconfig"; sourceTree = "<group>"; };
 		9E330A2B1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFSearchResultsTableViewCell.h; sourceTree = "<group>"; };
@@ -318,6 +329,8 @@
 			children = (
 				284CAF421F7366BE0007A184 /* UIImageView+Networking.h */,
 				284CAF431F7366BE0007A184 /* UIImageView+Networking.m */,
+				28CB6C2A1F7E316B00122AEA /* UIViewController+TFExtention.h */,
+				28CB6C2B1F7E316B00122AEA /* UIViewController+TFExtention.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -423,6 +436,8 @@
 			children = (
 				2833F1741F7B8EEA0022EF4A /* BannerView */,
 				28583E0A1F7B590600116294 /* FFPagingViewController */,
+				2890CB391F7F3CC300ED8CFB /* TFNavigationBar.h */,
+				2890CB3A1F7F3CC300ED8CFB /* TFNavigationBar.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -475,6 +490,9 @@
 				281686A21F789BE6004126C3 /* TFRecommondViewController.h */,
 				281686A31F789BE6004126C3 /* TFRecommondViewController.m */,
 				281686A41F789BE6004126C3 /* TFRecommondViewController.xib */,
+				28CB6C251F7DF35700122AEA /* TFBaseLiveViewController.h */,
+				28CB6C261F7DF35700122AEA /* TFBaseLiveViewController.m */,
+				28CB6C271F7DF35700122AEA /* TFBaseLiveViewController.xib */,
 			);
 			path = Recommend;
 			sourceTree = "<group>";
@@ -678,6 +696,7 @@
 				2833F1801F7BB84E0022EF4A /* TFCommonLiveTableViewCell.xib in Resources */,
 				2816869C1F789BBF004126C3 /* TFAnalystsViewController.xib in Resources */,
 				281686A61F789BE6004126C3 /* TFRecommondViewController.xib in Resources */,
+				28CB6C291F7DF35700122AEA /* TFBaseLiveViewController.xib in Resources */,
 				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
 				9EEA08DB1F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.xib in Resources */,
 				286A87CF1F73A44B0022825D /* TFHomeViewController.xib in Resources */,
@@ -711,7 +730,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A5B1B60DFEFEF745BC3EE415 /* [CP] Embed Pods Frameworks */ = {
@@ -752,6 +771,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2833F1771F7B8F600022EF4A /* TFCycleBannerView.m in Sources */,
+				28CB6C2C1F7E316B00122AEA /* UIViewController+TFExtention.m in Sources */,
 				28583E141F7B593800116294 /* FFPagingViewController.m in Sources */,
 				28583E131F7B593400116294 /* FFPagingViewItem.m in Sources */,
 				28583E121F7B593000116294 /* FFPagingHeaderView.m in Sources */,
@@ -784,6 +804,8 @@
 				282AE6891F7D00370030693E /* TFSortTableViewCell.m in Sources */,
 				286A87CE1F73A44B0022825D /* TFHomeViewController.m in Sources */,
 				2816869B1F789BBF004126C3 /* TFAnalystsViewController.m in Sources */,
+				2890CB3B1F7F3CC300ED8CFB /* TFNavigationBar.m in Sources */,
+				28CB6C281F7DF35700122AEA /* TFBaseLiveViewController.m in Sources */,
 				281686A51F789BE6004126C3 /* TFRecommondViewController.m in Sources */,
 				286A87D81F73A4950022825D /* TFAccountViewController.m in Sources */,
 				28CB6C221F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m in Sources */,

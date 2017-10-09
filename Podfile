@@ -7,6 +7,8 @@ target 'TianFeng' do
 
   # Pods for TianFeng
   pod 'M4CoreFoundation'
-  pod 'VTMagic'
+  
+  pod 'FDFullscreenPopGesture'
+
 
 end

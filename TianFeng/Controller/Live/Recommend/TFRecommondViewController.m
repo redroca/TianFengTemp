@@ -11,6 +11,7 @@
 #define kBannerViewHeight   221.f
 
 //Controllers
+#import "TFBaseLiveViewController.h"
 
 //Cells
 
@@ -93,6 +94,27 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.row) {
+        case 0: {
+            TFBaseLiveViewController *baseLiveVC = [[TFBaseLiveViewController alloc] init];
+            baseLiveVC.liveType = kLiveIsLiving;
+            [self tf_pushToNavigationController:baseLiveVC];
+        }
+            break;
+        case 1: {
+            TFBaseLiveViewController *baseLiveVC = [[TFBaseLiveViewController alloc] init];
+            baseLiveVC.liveType = kLiveAdvanceNotice;
+            [self tf_pushToNavigationController:baseLiveVC];
+        }
+            break;
+        case 3: {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark --- UITableViewDataSource
