@@ -71,8 +71,11 @@
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="p8d-ML-Xol" secondAttribute="trailing" id="3Oh-cS-B6n"/>
                     <constraint firstItem="n6d-Kn-kx7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6qz-ah-jjB"/>
+                    <constraint firstItem="p8d-ML-Xol" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X0a-MZ-qXe"/>
                     <constraint firstItem="n6d-Kn-kx7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XMS-ab-45n"/>
+                    <constraint firstItem="p8d-ML-Xol" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fsZ-00-7k3"/>
                     <constraint firstAttribute="bottom" secondItem="n6d-Kn-kx7" secondAttribute="bottom" id="nes-LQ-Dm3"/>
                     <constraint firstAttribute="trailing" secondItem="n6d-Kn-kx7" secondAttribute="trailing" id="tfe-Cs-DBn"/>
                 </constraints>

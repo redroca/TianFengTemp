@@ -56,7 +56,6 @@
 		286A87EE1F73ADBE0022825D /* TFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A87ED1F73ADBE0022825D /* TFTabBarController.m */; };
 		2890CB3B1F7F3CC300ED8CFB /* TFNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2890CB3A1F7F3CC300ED8CFB /* TFNavigationBar.m */; };
 		28ABEE6D1F75142800A5BC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ABEE6A1F7512DF00A5BC0E /* main.m */; };
-		28CB6C221F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB6C201F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m */; };
 		28CB6C231F7DE81B00122AEA /* TFRecommendAnalystsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CB6C211F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.xib */; };
 		28CB6C281F7DF35700122AEA /* TFBaseLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB6C261F7DF35700122AEA /* TFBaseLiveViewController.m */; };
 		28CB6C291F7DF35700122AEA /* TFBaseLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CB6C271F7DF35700122AEA /* TFBaseLiveViewController.xib */; };
@@ -64,6 +63,8 @@
 		5890CD85CC7CF90F8DA26B65 /* libPods-TianFeng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A608E0E2CF4ADCC2E0D7E8D /* libPods-TianFeng.a */; };
 		9E330A2E1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E330A2C1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.m */; };
 		9E330A2F1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E330A2D1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.xib */; };
+		9EDEB35C1F7DF0B4006BC3FA /* TFRecommendAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDEB35A1F7DF0B3006BC3FA /* TFRecommendAnalystsListTableViewCell.m */; };
+		9EDEB35D1F7DF617006BC3FA /* TFCommonLiveListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28038A301F7D0A2500CCA281 /* TFCommonLiveListTableViewCell.xib */; };
 		9EEA08DA1F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08D81F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.m */; };
 		9EEA08DB1F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA08D91F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.xib */; };
 		9EEA08DF1F78AEB000B469F3 /* TFGoldAnalystsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA08DD1F78AEAF00B469F3 /* TFGoldAnalystsCollectionViewCell.m */; };
@@ -167,8 +168,6 @@
 		28ABEE6A1F7512DF00A5BC0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TianFeng/main.m; sourceTree = SOURCE_ROOT; };
 		28ABEE6B1F7512DF00A5BC0E /* CodeStyle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CodeStyle.txt; path = TianFeng/CodeStyle.txt; sourceTree = SOURCE_ROOT; };
 		28ABEE6C1F7512E000A5BC0E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TianFeng/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		28CB6C1F1F7DE50300122AEA /* TFRecommendAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TFRecommendAnalystsListTableViewCell.h; path = "../../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/e1ca0b783cc13ac2ccf64d65399dcc62/Message/MessageTemp/5e4f59159df050c4506b1559df61c640/File/TFRecommendAnalystsListTableViewCell.h"; sourceTree = "<group>"; };
-		28CB6C201F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TFRecommendAnalystsListTableViewCell.m; path = "../../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/e1ca0b783cc13ac2ccf64d65399dcc62/Message/MessageTemp/5e4f59159df050c4506b1559df61c640/File/TFRecommendAnalystsListTableViewCell.m"; sourceTree = "<group>"; };
 		28CB6C211F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFRecommendAnalystsListTableViewCell.xib; sourceTree = "<group>"; };
 		28CB6C251F7DF35700122AEA /* TFBaseLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFBaseLiveViewController.h; sourceTree = "<group>"; };
 		28CB6C261F7DF35700122AEA /* TFBaseLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFBaseLiveViewController.m; sourceTree = "<group>"; };
@@ -180,6 +179,8 @@
 		9E330A2B1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFSearchResultsTableViewCell.h; sourceTree = "<group>"; };
 		9E330A2C1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		9E330A2D1F7A5D6D00A1C67F /* TFSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		9EDEB35A1F7DF0B3006BC3FA /* TFRecommendAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRecommendAnalystsListTableViewCell.m; sourceTree = "<group>"; };
+		9EDEB35B1F7DF0B4006BC3FA /* TFRecommendAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRecommendAnalystsListTableViewCell.h; sourceTree = "<group>"; };
 		9EEA08D71F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFGoldAnalystsListTableViewCell.h; sourceTree = "<group>"; };
 		9EEA08D81F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFGoldAnalystsListTableViewCell.m; sourceTree = "<group>"; };
 		9EEA08D91F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TFGoldAnalystsListTableViewCell.xib; sourceTree = "<group>"; };
@@ -593,8 +594,8 @@
 		9EEA08D11F78A25200B469F3 /* Analysts */ = {
 			isa = PBXGroup;
 			children = (
-				28CB6C1F1F7DE50300122AEA /* TFRecommendAnalystsListTableViewCell.h */,
-				28CB6C201F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m */,
+				9EDEB35B1F7DF0B4006BC3FA /* TFRecommendAnalystsListTableViewCell.h */,
+				9EDEB35A1F7DF0B3006BC3FA /* TFRecommendAnalystsListTableViewCell.m */,
 				28CB6C211F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.xib */,
 				9EEA08D71F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.h */,
 				9EEA08D81F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.m */,
@@ -700,6 +701,7 @@
 			files = (
 				281C57D91F8B491900737B85 /* TFCommonLiveListTableViewCell.xib in Resources */,
 				281C57DE1F8B549500737B85 /* TFAnalystsListViewController.xib in Resources */,
+				9EDEB35D1F7DF617006BC3FA /* TFCommonLiveListTableViewCell.xib in Resources */,
 				28CB6C231F7DE81B00122AEA /* TFRecommendAnalystsListTableViewCell.xib in Resources */,
 				284CAEE41F735D770007A184 /* Assets.xcassets in Resources */,
 				282AE67A1F7C93B10030693E /* TFCommonVideoCollectionViewCell.xib in Resources */,
@@ -741,7 +743,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A5B1B60DFEFEF745BC3EE415 /* [CP] Embed Pods Frameworks */ = {
@@ -820,7 +822,7 @@
 				28CB6C281F7DF35700122AEA /* TFBaseLiveViewController.m in Sources */,
 				281686A51F789BE6004126C3 /* TFRecommondViewController.m in Sources */,
 				286A87D81F73A4950022825D /* TFAccountViewController.m in Sources */,
-				28CB6C221F7DE50400122AEA /* TFRecommendAnalystsListTableViewCell.m in Sources */,
+				9EDEB35C1F7DF0B4006BC3FA /* TFRecommendAnalystsListTableViewCell.m in Sources */,
 				9EEA08DA1F78A4DE00B469F3 /* TFGoldAnalystsListTableViewCell.m in Sources */,
 				286A87D31F73A4680022825D /* TFMineViewController.m in Sources */,
 			);

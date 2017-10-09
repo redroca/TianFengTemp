@@ -12,7 +12,7 @@
 
 #pragma mark App Colors
 + (UIColor *)LiveTitleNormalColor;
-
++ (UIColor *)LiveTitleGrayColor;
 + (UIColor *)GlobalBackgroundColr;
-
++ (UIColor *)GlobalTabBarItemSelectedColor;
 @end

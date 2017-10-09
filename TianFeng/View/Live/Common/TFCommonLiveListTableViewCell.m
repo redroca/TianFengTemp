@@ -80,6 +80,12 @@
     _commonLiveListCollection.contentOffset = CGPointMake(0, 0);
 }
 
+//更多
+- (IBAction)action_more:(id)sender {
+}
+
+
+
 #pragma mark – Delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 4;

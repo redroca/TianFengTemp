@@ -24,6 +24,8 @@
 
 //Models
 
+//Others
+#import "CommonAppHeaders.h"
 @interface TFTabBarController ()
 
 @end
@@ -69,6 +71,7 @@
     controller.title = title;
     controller.tabBarItem.image = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     controller.tabBarItem.selectedImage = [highlightedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor GlobalTabBarItemSelectedColor]} forState:UIControlStateSelected];
     return [[TFNavigationController alloc] initWithRootViewController:controller];
 }
 

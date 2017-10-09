@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMt-rX-fl7">
-                        <rect key="frame" x="0.0" y="249.5" width="374" height="5"/>
+                        <rect key="frame" x="0.0" y="250" width="374" height="5"/>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="5" id="QHi-jY-VAC"/>
                         </constraints>
                     </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3XW-ZN-hjD">
-                        <rect key="frame" x="0.0" y="62" width="374" height="187.5"/>
+                        <rect key="frame" x="0.0" y="62" width="374" height="188"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vXe-cf-Mls">
                             <size key="itemSize" width="50" height="50"/>
@@ -37,7 +37,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oh-ZN-EH7">
-                        <rect key="frame" x="15" y="20" width="73.5" height="22"/>
+                        <rect key="frame" x="15" y="20" width="74" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -58,6 +58,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="FMt-rX-fl7" secondAttribute="bottom" id="5ff-bE-Xlk"/>
                     <constraint firstItem="FMt-rX-fl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5iO-Qy-AVZ"/>
+                    <constraint firstItem="FMt-rX-fl7" firstAttribute="top" secondItem="3XW-ZN-hjD" secondAttribute="bottom" id="AQl-se-Y9z"/>
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="BaP-Qc-QUT"/>
                     <constraint firstAttribute="trailing" secondItem="FMt-rX-fl7" secondAttribute="trailing" id="HB8-Zp-DNL"/>
                     <constraint firstAttribute="trailing" secondItem="vE9-rH-etu" secondAttribute="trailing" constant="23" id="IeO-od-jqH"/>
@@ -65,7 +66,6 @@
                     <constraint firstItem="3oh-ZN-EH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ia8-kj-2B7"/>
                     <constraint firstItem="3XW-ZN-hjD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jGh-VL-2vk"/>
                     <constraint firstItem="vE9-rH-etu" firstAttribute="centerY" secondItem="3oh-ZN-EH7" secondAttribute="centerY" id="vjz-5W-h8r"/>
-                    <constraint firstItem="FMt-rX-fl7" firstAttribute="top" secondItem="3XW-ZN-hjD" secondAttribute="bottom" id="wpe-X6-Vah"/>
                     <constraint firstAttribute="trailing" secondItem="3XW-ZN-hjD" secondAttribute="trailing" id="wru-Oe-gJp"/>
                 </constraints>
             </tableViewCellContentView>
