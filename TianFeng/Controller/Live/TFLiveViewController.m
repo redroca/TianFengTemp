@@ -59,6 +59,7 @@
         _pagingViewController.delegate = self;
         _pagingViewController.dataSource = self;
         _pagingViewController.scrolled = NO;
+        _pagingViewController.topViewController = self;
     }
     return _pagingViewController;
 }
@@ -86,15 +87,16 @@
 }
 
 #pragma mark - Setup
+- (void)setupCustomNavigationBar {
+    
+}
+
 - (void)setupTitleView {
     
     CGFloat width = SCREENWIDTH / (self.titlesData.count + 1);
     
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, kHeaderViewTop)];
     titleView.backgroundColor = [UIColor clearColor];
-    
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, kHeaderViewTop - 1, SCREENWIDTH, 1)];
-    lineView.backgroundColor = [UIColor GlobalBackgroundColr];
     
     //searchButton
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, kHeaderViewTop)];
@@ -137,9 +139,10 @@
     self.pagingHeaderView.titles = self.titlesData;
     
     [titleView addSubview:leftButton];
-    [titleView addSubview:lineView];
     [titleView addSubview:self.pagingHeaderView];
-    [self.navigationController.navigationBar addSubview:titleView];
+    
+    [[TFNavigationBarManager sharedManager].selfNavigationBar addSubview:titleView];
+//    [self.navigationController.navigationBar addSubview:titleView];
     [self.view addSubview:self.pagingViewController.view];
     [self.pagingViewController reloadData];
 }
@@ -160,8 +163,6 @@
     [TFNavigationBarManager setBarColor:[UIColor whiteColor]];
     [TFNavigationBarManager setZeroAlphaOffset:0];
     [TFNavigationBarManager setFullAlphaOffset:150];
-    [TFNavigationBarManager setFullAlphaTintColor:[UIColor whiteColor]];
-    [TFNavigationBarManager setFullAlphaBarStyle:UIStatusBarStyleLightContent];
 }
 
 #pragma mark – Override properties
@@ -187,11 +188,20 @@
 #pragma mark – View lifecycle
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self initBarManager];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    if ([TFNavigationBarManager sharedManager].selfNavigationBar) {
+        [TFNavigationBarManager sharedManager].selfNavigationBar.hidden = NO;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    if ([TFNavigationBarManager sharedManager].selfNavigationBar) {
+        [TFNavigationBarManager sharedManager].selfNavigationBar.hidden = YES;
+    }
 }
 
 - (void)viewDidLoad {
@@ -202,6 +212,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.scrollNeedToChangeColor = NO;
     
+    NSLog(@"%@, %@", NSStringFromCGRect(self.navigationController.navigationBar.frame), self.navigationController.navigationBar.subviews);
+    
+    [self initBarManager];
     [self setupData];
     [self setupTitleView];
 }

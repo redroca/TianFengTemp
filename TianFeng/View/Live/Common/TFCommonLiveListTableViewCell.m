@@ -35,7 +35,14 @@
 }
 
 + (CGFloat)heightForCell {
+    if (IS_IPHONEX) {
+        return 455.f;
+    }
     return 455/667.0 * SCREENHEIGHT;
+}
+
+- (IBAction)moreAction:(id)sender {
+    
 }
 
 #pragma mark – Initialization & Memory management methods

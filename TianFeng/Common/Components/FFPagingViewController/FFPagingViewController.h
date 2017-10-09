@@ -26,6 +26,7 @@
 @interface FFPagingViewController : UIViewController
 @property(nonatomic, weak) id <FFPagingViewControllerDelegate> delegate;
 @property(nonatomic, weak) id <FFPagingViewControllerDataSource> dataSource;
+@property(nonatomic, strong) id topViewController;
 @property(nonatomic, assign) NSInteger seletedIndex;
 
 @property(nonatomic, assign) BOOL scrolled;

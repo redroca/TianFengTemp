@@ -11,4 +11,4 @@
 
 #define IS_IOS_11    floorf([[UIDevice currentDevice].systemVersion floatValue]) ==11.0 ? 1 : 0
 
-#define IS_IPHONEX     [UIScreen mainScreen].bounds.size.height > 812 ? 1 : 0
+#define IS_IPHONEX     [UIScreen mainScreen].bounds.size.height == 812 ? 1 : 0

@@ -33,6 +33,10 @@
     return 255/667.0 * SCREENHEIGHT;
 }
 
+- (IBAction)moreAction:(id)sender {
+    
+}
+
 #pragma mark – Initialization & Memory management methods
 - (void)setup{
     [super setup];
