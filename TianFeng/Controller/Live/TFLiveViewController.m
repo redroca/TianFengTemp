@@ -211,9 +211,7 @@
     self.navigationItem.title = @"";
     self.view.backgroundColor = [UIColor whiteColor];
     self.scrollNeedToChangeColor = NO;
-    
-    NSLog(@"%@, %@", NSStringFromCGRect(self.navigationController.navigationBar.frame), self.navigationController.navigationBar.subviews);
-    
+        
     [self initBarManager];
     [self setupData];
     [self setupTitleView];

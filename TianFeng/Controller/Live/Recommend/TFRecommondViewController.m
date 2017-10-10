@@ -12,16 +12,17 @@
 
 //Controllers
 #import "TFBaseLiveViewController.h"
+#import "TFAnalystsListViewController.h"
 
 //Cells
+#import "TFRecommendAnalystsListTableViewCell.h"
+#import "TFGoldAnalystsListTableViewCell.h"
+#import "TFCommonLiveTableViewCell.h"
+#import "TFSortListTableViewCell.h"
 
 //Views
 #import "TFPageControl.h"
 #import "TFCycleBannerView.h"
-#import "TFGoldAnalystsListTableViewCell.h"
-#import "TFCommonLiveTableViewCell.h"
-#import "TFRecommendAnalystsListTableViewCell.h"
-#import "TFSortListTableViewCell.h"
 
 //API
 
@@ -108,8 +109,9 @@
             [self tf_pushToNavigationController:baseLiveVC];
         }
             break;
-        case 3: {
-            
+        case 2: {
+            TFAnalystsListViewController *analystsVC = [[TFAnalystsListViewController alloc] init];
+            [self tf_pushToNavigationController:analystsVC];
         }
             break;
         default:
