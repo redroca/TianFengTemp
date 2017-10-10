@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "CommonAppHeaders.h"
 
+typedef void(^AnalystsDetailBlock)(NSInteger index);
+
 @interface TFGoldAnalystsListTableViewCell : CoreXibTableViewCell
 
 @property (weak, nonatomic) IBOutlet UICollectionView *goldAnalystsListCollection;
-
+@property (nonatomic, copy) AnalystsDetailBlock analystsDetailBlock;
 - (void)configureWithModel:(NSDictionary *)model;
 @end

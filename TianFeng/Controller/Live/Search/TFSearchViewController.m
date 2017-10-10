@@ -7,6 +7,7 @@
 //
 
 #import "TFSearchViewController.h"
+#import "TFSearchResultViewController.h"
 
 @interface TFSearchViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -35,6 +36,8 @@
 }
 
 - (IBAction)action_toSearchResult:(id)sender {
+    TFSearchResultViewController *searchResultVC = [[TFSearchResultViewController alloc] init];
+    [self.navigationController pushViewController:searchResultVC animated:YES];
 }
 
 #pragma mark – Request service methods

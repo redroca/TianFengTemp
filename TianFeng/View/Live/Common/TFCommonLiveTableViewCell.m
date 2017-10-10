@@ -71,9 +71,6 @@
     _collectionView.contentOffset = CGPointMake(0, 0);
 }
 
-- (IBAction)action_more:(id)sender {
-}
-
 
 
 #pragma mark – Delegate

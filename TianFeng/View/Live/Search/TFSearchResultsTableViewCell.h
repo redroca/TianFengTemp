@@ -10,5 +10,7 @@
 #import "CommonAppHeaders.h"
 
 @interface TFSearchResultsTableViewCell : CoreXibTableViewCell
+- (void)configureCellWithModel:(NSDictionary *)model;
++ (CGFloat)heightForCell;
 
 @end

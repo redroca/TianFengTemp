@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonAppHeaders.h"
 
-@interface TFAnalystsDetailView : UIView
-
+@interface TFAnalystsDetailView : CoreDesignableXibUIView
+- (void)configureWithModel:(NSDictionary *)model;
++ (CGFloat)heightOfView ;
 @end

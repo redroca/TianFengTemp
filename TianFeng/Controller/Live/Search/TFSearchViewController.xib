@@ -33,10 +33,14 @@
                         <action selector="backAction:" destination="-1" eventType="touchUpInside" id="1FR-X4-GUD"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_back" translatesAutoresizingMaskIntoConstraints="NO" id="gbZ-hH-4Eb">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_btn_back_nor" translatesAutoresizingMaskIntoConstraints="NO" id="gbZ-hH-4Eb">
                     <rect key="frame" x="15" y="27" width="16" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="G3K-yA-L1f"/>
+                        <constraint firstAttribute="width" constant="16" id="J44-js-riS"/>
+                    </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM4-nS-Qse">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GM4-nS-Qse" userLabel="LineView">
                     <rect key="frame" x="0.0" y="62" width="375" height="1"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -77,6 +81,16 @@
                     <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9xq-vh-Vo7">
+                    <rect key="frame" x="0.0" y="111" width="375" height="546"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nb8-VB-PqA">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -93,8 +107,12 @@
                 <constraint firstItem="ud5-Yo-rZJ" firstAttribute="top" secondItem="QWJ-fi-HEs" secondAttribute="top" id="WWy-6D-8P9"/>
                 <constraint firstItem="ud5-Yo-rZJ" firstAttribute="trailing" secondItem="QWJ-fi-HEs" secondAttribute="trailing" constant="-10" id="f6T-a6-clQ"/>
                 <constraint firstAttribute="trailing" secondItem="QWJ-fi-HEs" secondAttribute="trailing" constant="80" id="g7f-NO-bQF"/>
+                <constraint firstItem="9xq-vh-Vo7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="gZw-1n-WiN"/>
                 <constraint firstItem="6qi-9Z-P4s" firstAttribute="top" secondItem="GM4-nS-Qse" secondAttribute="top" constant="17" id="lE4-c6-hpc"/>
+                <constraint firstItem="9xq-vh-Vo7" firstAttribute="top" secondItem="6qi-9Z-P4s" secondAttribute="bottom" constant="15" id="oKG-NK-1e3"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GM4-nS-Qse" secondAttribute="trailing" id="ooI-zD-ge6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="9xq-vh-Vo7" secondAttribute="bottom" constant="10" id="phD-1A-KS7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9xq-vh-Vo7" secondAttribute="trailing" id="qkf-r7-Cdk"/>
                 <constraint firstItem="gbZ-hH-4Eb" firstAttribute="top" secondItem="dZ1-OF-1bs" secondAttribute="top" constant="26.300000000000001" id="vOZ-jw-PER"/>
                 <constraint firstItem="ud5-Yo-rZJ" firstAttribute="bottom" secondItem="QWJ-fi-HEs" secondAttribute="bottom" id="wye-WJ-XxM"/>
                 <constraint firstItem="QWJ-fi-HEs" firstAttribute="centerY" secondItem="gbZ-hH-4Eb" secondAttribute="centerY" id="x0B-hx-r0p"/>
@@ -104,6 +122,6 @@
         </view>
     </objects>
     <resources>
-        <image name="icon_back" width="16" height="21"/>
+        <image name="nav_btn_back_nor" width="16" height="21"/>
     </resources>
 </document>

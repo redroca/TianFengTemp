@@ -10,7 +10,7 @@
 #import "CommonAppHeaders.h"
 
 @interface TFGoldAnalystsCollectionViewCell : CoreXibCollectionViewCell
-
+- (void)configureCellWithModel:(NSDictionary *)model;
 + (CGFloat)widthOfCollectionViewCell;
 + (CGFloat)heightOfCollectionViewCell;
 

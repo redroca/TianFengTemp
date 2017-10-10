@@ -11,8 +11,8 @@
 
 @interface TFGoldAnalystsListTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UILabel *ColumnsName;
-
 @property (strong, nonatomic)   NSMutableArray  *datasource;
+
 @end
 
 
@@ -33,12 +33,6 @@
 }
 
 #pragma mark - Setter & Getter
-- (NSMutableArray *)datasource {
-    if (!_datasource) {
-        _datasource = [NSMutableArray array];
-    }
-    return _datasource;
-}
 
 #pragma mark – Private methods
 - (void)initInterface{
@@ -73,11 +67,13 @@
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     TFGoldAnalystsCollectionViewCell * cell = [TFGoldAnalystsCollectionViewCell reusableCellDequeueCollectionView:_goldAnalystsListCollection forIndexPath:indexPath];
-    
+    [cell configureCellWithModel:self.datasource[indexPath.row]];
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (self.analystsDetailBlock) {
+        self.analystsDetailBlock(indexPath.row);
+    }
 }
 
 @end

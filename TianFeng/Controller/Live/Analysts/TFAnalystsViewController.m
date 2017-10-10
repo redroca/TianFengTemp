@@ -11,6 +11,9 @@
 #import "TFGoldAnalystsCollectionViewCell.h"
 
 #import "TFRecommendAnalystsListTableViewCell.h"
+#import "TFAnalystsDetailViewController.h"
+
+
 @interface TFAnalystsViewController ()
 
 @end
@@ -75,6 +78,24 @@
 {
     if (indexPath.section < 2) {
         TFGoldAnalystsListTableViewCell * cell = [TFGoldAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];
+
+        cell.analystsDetailBlock = ^(NSInteger index) {
+            TFAnalystsDetailViewController *analystsVC = [[TFAnalystsDetailViewController alloc] init];
+            [self tf_pushToNavigationController:analystsVC];
+        };
+        
+        NSString *name;
+        if (indexPath.row == 0) {
+            name = @"金牌分析师";
+        } else {
+            name = @"活跃分析师";
+        }
+        NSDictionary *model = @{@"name" : name,
+                                @"data" : @[@{@"AnalystsHeaderImage" : @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507638086746&di=2070414a4a55d8be2ff1e08471def9ce&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20139_7_17%2Fa8vkyk31660545093.jpg", @"AnalystsName" : @"罗大涛", @"AnalystsDescription":@"他是分析师分析师分析师"}, @{@"AnalystsHeaderImage" : @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507638086746&di=2070414a4a55d8be2ff1e08471def9ce&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20139_7_17%2Fa8vkyk31660545093.jpg", @"AnalystsName" : @"罗大涛", @"AnalystsDescription":@"他是分析师分析师分析师"}, @{@"AnalystsHeaderImage" : @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507638086746&di=2070414a4a55d8be2ff1e08471def9ce&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20139_7_17%2Fa8vkyk31660545093.jpg", @"AnalystsName" : @"罗大涛", @"AnalystsDescription":@"他是分析师分析师分析师"}, @{@"AnalystsHeaderImage" : @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507638086746&di=2070414a4a55d8be2ff1e08471def9ce&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20139_7_17%2Fa8vkyk31660545093.jpg", @"AnalystsName" : @"罗大涛", @"AnalystsDescription":@"他是分析师分析师分析师"}, @{@"AnalystsHeaderImage" : @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507638086746&di=2070414a4a55d8be2ff1e08471def9ce&imgtype=0&src=http%3A%2F%2Fs7.rr.itc.cn%2Fg%2FwapChange%2F20139_7_17%2Fa8vkyk31660545093.jpg", @"AnalystsName" : @"罗大涛", @"AnalystsDescription":@"他是分析师分析师分析师"}]
+                                };
+        
+        [cell configureWithModel:model];
+        
         cell.selectionStyle = NO;
         return cell;
     } else {

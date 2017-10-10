@@ -10,9 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFRecommondViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFSearchResultViewController">
             <connections>
-                <outlet property="tableView" destination="H3k-Ua-x2s" id="WVT-Da-aF6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,24 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H3k-Ua-x2s">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-Oh-vMf">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="Jdb-Xd-oR5"/>
-                        <outlet property="delegate" destination="-1" id="YhY-s3-Ij8"/>
+                        <outlet property="dataSource" destination="-1" id="c23-m3-9ax"/>
+                        <outlet property="delegate" destination="-1" id="2Ld-8Y-q4r"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="H3k-Ua-x2s" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="Y07-bz-n86"/>
-                <constraint firstItem="H3k-Ua-x2s" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="f7G-T4-bT3"/>
-                <constraint firstItem="H3k-Ua-x2s" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="lxk-gz-bO9"/>
-                <constraint firstItem="H3k-Ua-x2s" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="wwa-GC-uHw"/>
+                <constraint firstItem="PYg-Oh-vMf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="9kX-8i-NP6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PYg-Oh-vMf" secondAttribute="trailing" id="duT-6e-8li"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="PYg-Oh-vMf" secondAttribute="top" id="fHb-VT-o7E"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PYg-Oh-vMf" secondAttribute="bottom" id="z1A-KJ-RKR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="39.5" y="53.5"/>
+            <point key="canvasLocation" x="44.5" y="61.5"/>
         </view>
     </objects>
 </document>

@@ -19,18 +19,25 @@
 
 @end
 
-
 @implementation TFSearchResultsTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setup {
+    [super setup];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
++ (CGFloat)heightForCell {
+    if (IS_IPHONEX) {
+        return 100.f;
+    }
+    return 100/667.0 * SCREENHEIGHT;
+}
 
-    // Configure the view for the selected state
+- (void)configureCellWithModel:(NSDictionary *)model {
+    [self.VedioCoverImage img:[NSURL URLWithString:model[@"coverImg"]] withPlaceholder:nil completion:nil];
+    [self.VedioStatusImage img:[NSURL URLWithString:model[@"statusImg"]] withPlaceholder:nil completion:nil];
+    self.VedioTitleLabel.text = model[@"vedioTitle"];
+    self.VedioAuthorLabel.text = model[@"vedioAuthor"];
+    self.VedioTimeLabel.text = model[@"vedioTime"];
 }
 
 @end

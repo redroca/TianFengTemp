@@ -13,17 +13,35 @@
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsName;
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsPosition;
 @property (weak, nonatomic) IBOutlet UILabel *AnalystsDescription;
+@property (weak, nonatomic) IBOutlet UIButton *followButton;
 
 @end
 
 @implementation TFAnalystsDetailView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)setup{
+    [super setup];
+    self.followButton.layer.cornerRadius = 2;
 }
-*/
+
+#pragma mark – Public methods
++ (CGFloat)heightOfView {
+    if (IS_IPHONEX) {
+        return 265;
+    }
+    return 265/667.0 * SCREENHEIGHT;
+}
+
+- (void)configureWithModel:(NSDictionary *)model {
+    [self.AnalystsHeaderImage img:[NSURL URLWithString:model[@"headerImg"]] withPlaceholder:nil completion:nil];
+    self.AnalystsName.text = model[@"name"];
+    self.AnalystsPosition.text = model[@"psition"];
+    self.AnalystsDescription.text = model[@"description"];
+}
+
+- (IBAction)followOrNot:(id)sender {
+}
+
+
 
 @end

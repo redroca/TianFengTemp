@@ -22,16 +22,15 @@
 
 - (void)setup {
     [super setup];
-    [self initUserInterface];
 }
 
 #pragma mark – Initialization & Memory management methods
-- (void)initUserInterface {
-    
-    
+
+- (void)configureCellWithModel:(NSDictionary *)model {
+    [self.analystsHeaderImage img:[NSURL URLWithString:model[@"AnalystsHeaderImage"]] withPlaceholder:nil completion:nil];
+    self.analystsName.text = model[@"AnalystsName"];
+    self.analystsPosition.text = model[@"AnalystsDescription"];
 }
-
-
 
 #pragma mark – Public methods
 + (CGFloat)widthOfCollectionViewCell {

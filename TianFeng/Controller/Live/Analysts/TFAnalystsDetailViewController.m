@@ -1,19 +1,18 @@
 //
-//  TFBaseLiveViewController.m
+//  TFAnalystsDetailViewController.m
 //  TianFeng
 //
-//  Created by hades on 2017/9/29.
+//  Created by 周恒 on 2017/10/10.
 //  Copyright © 2017年 hades. All rights reserved.
 //
 
-#import "TFBaseLiveViewController.h"
-
+#import "TFAnalystsDetailViewController.h"
 //Controllers
 
 //Cells
-
-//Views
 #import "TFCommonVideoCollectionViewCell.h"
+//Views
+#import "TFAnalystsDetailView.h"
 
 //API
 
@@ -22,29 +21,15 @@
 //Others
 #import "TFNavigationBarManager.h"
 
-@interface TFBaseLiveViewController ()
+@interface TFAnalystsDetailViewController ()
 @property (nonatomic, strong)   NSMutableArray  *datasource;
+@property (nonatomic, strong)   TFAnalystsDetailView *analystsHeaderView;
+
 @end
 
-@implementation TFBaseLiveViewController
+@implementation TFAnalystsDetailViewController
 
 #pragma mark - Setup
-- (void)setupTitleWithLiveType {
-    switch (self.liveType) {
-        case kLiveIsLiving: {
-            self.navigationController.title = @"热门直播";
-        }
-            break;
-        case kLiveAdvanceNotice: {
-            self.navigationController.title = @"直播预告";
-        }
-            break;
-        default:
-            self.navigationController.title = @"精彩回放";
-            break;
-    }
-}
-
 - (void)setupCollectionView {
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
     self.collectionView.collectionViewLayout = flowLayout;
@@ -57,6 +42,9 @@
     // 设置最小行间距
     flowLayout.minimumLineSpacing = 20;
     flowLayout.sectionInset = UIEdgeInsetsMake(20, 12.5, 20, 12.5);
+    
+    flowLayout.headerReferenceSize = CGSizeMake(SCREENWIDTH, [TFAnalystsDetailView heightOfView]);  //设置headerView大小
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];  //  一定要设置
 }
 
 #pragma mark - Setters/Getters
@@ -113,18 +101,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.title = @"分析师页面";
     [self setupCollectionView];
-    [self setupTitleWithLiveType];
     
     [self loadData];
     [self refreshCollectionViewWithHeaderSel:@selector(loadData) withFooterRefreshSel:@selector(loadMoreData)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark – Delegate
 #pragma mark --- UICollectionViewDelegate, UICollectionViewDataSource
@@ -139,5 +123,20 @@
     
     return cell;
 }
+
+- (UICollectionReusableView *) collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+    headerView.backgroundColor = [UIColor GlobalBackgroundColr];
+    
+    TFAnalystsDetailView *analystsHeaderView= [[TFAnalystsDetailView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, [TFAnalystsDetailView heightOfView])];
+    self.analystsHeaderView = analystsHeaderView;
+    NSDictionary *model = @{@"headerImg" : @"http://otdtbznd1.bkt.clouddn.com/3d1cba03f81d8556ce692e4230e422af.jpg", @"name" : @"罗大涛", @"psition":@"这是一个分析师这是一个分析师", @"description":@"如果你不能简述你的想法说明你还不够了解它如果你不能简述你的想法说明你还不够了解它"};
+    [analystsHeaderView configureWithModel:model];
+    analystsHeaderView.backgroundColor = [UIColor orangeColor];
+    [headerView addSubview:analystsHeaderView];
+    return headerView;
+}
+
 
 @end
