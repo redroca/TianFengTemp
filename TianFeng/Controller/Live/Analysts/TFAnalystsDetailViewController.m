@@ -101,7 +101,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.title = @"分析师页面";
+    self.title = @"分析师页面";
     [self setupCollectionView];
     
     [self loadData];
@@ -109,10 +109,8 @@
 }
 
 
-
 #pragma mark – Delegate
 #pragma mark --- UICollectionViewDelegate, UICollectionViewDataSource
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.datasource.count;
 }
