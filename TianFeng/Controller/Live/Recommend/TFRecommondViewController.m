@@ -13,7 +13,7 @@
 //Controllers
 #import "TFBaseLiveViewController.h"
 #import "TFAnalystsListViewController.h"
-
+#import "ApplyForLiveViewController.h"
 //Cells
 #import "TFRecommendAnalystsListTableViewCell.h"
 #import "TFGoldAnalystsListTableViewCell.h"
@@ -162,6 +162,12 @@
                                 };
         
         [cell configureWithModel:model];
+        
+        cell.toVedioDetailBlock = ^(NSInteger index) {
+            ApplyForLiveViewController *applyForLiveVC = [[ApplyForLiveViewController alloc] init];
+            [self tf_pushToNavigationController:applyForLiveVC];
+        };
+        
         return cell;
     } else if (indexPath.row == 2) {
         TFRecommendAnalystsListTableViewCell *cell = [TFRecommendAnalystsListTableViewCell reusableCellDequeueTableView:self.tableView];

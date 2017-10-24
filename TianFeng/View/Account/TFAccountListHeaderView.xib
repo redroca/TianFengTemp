@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFAccountListHeaderView">
+            <connections>
+                <outlet property="headerBackImage" destination="MeR-uh-k4i" id="pgj-4i-vpN"/>
+                <outlet property="userGenderImage" destination="UBU-Az-Tt1" id="4sj-u2-i2x"/>
+                <outlet property="userHeaderImage" destination="5Qb-7a-WzU" id="2TA-0s-Jvc"/>
+                <outlet property="userNameLabel" destination="z9A-LA-e5e" id="gjO-q5-Ry8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FXe-pD-x3L">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-uh-k4i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-7a-WzU">
+                    <rect key="frame" x="136.5" y="42" width="101" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="hPv-O9-y7M"/>
+                        <constraint firstAttribute="width" secondItem="5Qb-7a-WzU" secondAttribute="height" id="jKn-qM-Fc6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="50.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UBU-Az-Tt1">
+                    <rect key="frame" x="200.5" y="123.5" width="20" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Srf-fH-aTP"/>
+                        <constraint firstAttribute="width" secondItem="UBU-Az-Tt1" secondAttribute="height" id="W9f-Bx-d9D"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘小雯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9A-LA-e5e">
+                    <rect key="frame" x="164" y="153" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4yV-iJ-NqY" firstAttribute="trailing" secondItem="MeR-uh-k4i" secondAttribute="trailing" id="2WN-Kq-9ni"/>
+                <constraint firstItem="4yV-iJ-NqY" firstAttribute="bottom" secondItem="MeR-uh-k4i" secondAttribute="bottom" id="4su-uw-qmz"/>
+                <constraint firstItem="MeR-uh-k4i" firstAttribute="top" secondItem="FXe-pD-x3L" secondAttribute="top" id="Hdb-tu-Qry"/>
+                <constraint firstItem="UBU-Az-Tt1" firstAttribute="bottom" secondItem="5Qb-7a-WzU" secondAttribute="bottom" constant="1" id="Ktb-xz-aNa"/>
+                <constraint firstItem="4yV-iJ-NqY" firstAttribute="bottom" secondItem="z9A-LA-e5e" secondAttribute="bottom" constant="14" id="OdR-LJ-3km"/>
+                <constraint firstItem="5Qb-7a-WzU" firstAttribute="centerY" secondItem="4yV-iJ-NqY" secondAttribute="centerY" id="WAD-NR-fkh"/>
+                <constraint firstItem="UBU-Az-Tt1" firstAttribute="trailing" secondItem="5Qb-7a-WzU" secondAttribute="trailing" constant="-17" id="Y4U-Gw-ifN"/>
+                <constraint firstItem="z9A-LA-e5e" firstAttribute="centerX" secondItem="5Qb-7a-WzU" secondAttribute="centerX" id="gif-9w-754"/>
+                <constraint firstItem="MeR-uh-k4i" firstAttribute="leading" secondItem="4yV-iJ-NqY" secondAttribute="leading" id="pao-0y-iQ5"/>
+                <constraint firstItem="5Qb-7a-WzU" firstAttribute="centerX" secondItem="4yV-iJ-NqY" secondAttribute="centerX" id="qpw-Cf-rvO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="4yV-iJ-NqY"/>
+            <point key="canvasLocation" x="-518.5" y="-658.5"/>
+        </view>
+    </objects>
+</document>

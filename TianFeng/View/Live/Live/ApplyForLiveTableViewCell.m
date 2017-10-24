@@ -8,17 +8,19 @@
 
 #import "ApplyForLiveTableViewCell.h"
 
+@interface ApplyForLiveTableViewCell()
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+@end
+
 @implementation ApplyForLiveTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setup {
+    [super setup];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)configureCellWithModel:(NSDictionary *)model {
+    self.contentLabel.text = model[@"content"];
 }
 
 @end

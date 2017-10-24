@@ -9,6 +9,8 @@
 #import "TFStocksViewController.h"
 //Views
 
+//Controller
+#import "ApplyForLiveViewController.h"
 //Cells
 #import "TFGoldAnalystsListTableViewCell.h"
 #import "TFCommonLiveTableViewCell.h"
@@ -97,6 +99,11 @@
                                 };
         
         [cell configureWithModel:model];
+        
+        cell.toVedioDetailBlock = ^(NSInteger index) {
+            ApplyForLiveViewController *applyForLiveVC = [[ApplyForLiveViewController alloc] init];
+            [self tf_pushToNavigationController:applyForLiveVC];
+        };
         return cell;
     } else if (indexPath.section == 1) {
         TFCommonLiveListTableViewCell *cell = [TFCommonLiveListTableViewCell reusableCellDequeueTableView:self.tableView];
@@ -107,6 +114,10 @@
                                 };
         
         [cell configureWithModel:model];
+        cell.toVedioDetailBlock = ^(NSInteger index) {
+            ApplyForLiveViewController *applyForLiveVC = [[ApplyForLiveViewController alloc] init];
+            [self tf_pushToNavigationController:applyForLiveVC];
+        };
         return cell;
     }  else {
         //Override

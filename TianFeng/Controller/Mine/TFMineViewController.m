@@ -7,22 +7,25 @@
 //
 
 #import "TFMineViewController.h"
+//Controllers
 
+//Cells
+
+//Views
+
+//API
+
+//Models
+
+//Other
+#import "CommonAppHeaders.h"
 @interface TFMineViewController ()
+
 
 @end
 
 @implementation TFMineViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Setters/Getters
 
@@ -42,8 +45,17 @@
 
 #pragma mark – Initialization & Memory management methods
 
-#pragma mark – View lifecycle
 
+#pragma mark – View lifecycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+}
 #pragma mark – Delegate
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+
+
 
 @end
+
+

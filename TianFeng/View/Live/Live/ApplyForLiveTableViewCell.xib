@@ -35,6 +35,9 @@
                 <constraint firstItem="Fl7-tn-56f" firstAttribute="top" secondItem="aW0-zy-SZf" secondAttribute="top" id="lZS-Kz-hds"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentLabel" destination="Fl7-tn-56f" id="M3o-eF-E7s"/>
+            </connections>
             <point key="canvasLocation" x="34" y="116"/>
         </tableViewCell>
     </objects>

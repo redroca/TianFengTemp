@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ApplyForLiveView : UIView
+#import "CommonAppHeaders.h"
+@interface ApplyForLiveView : CoreDesignableXibUIView
++ (CGFloat)heightOfView;
+- (void)configureWithModel:(NSDictionary *)model;
 
 @end

@@ -9,5 +9,6 @@
 #import <M4CoreFoundation/M4CoreFoundation.h>
 
 @interface ApplyForLiveTableViewCell : CoreXibTableViewCell
+- (void)configureCellWithModel:(NSDictionary *)model;
 
 @end

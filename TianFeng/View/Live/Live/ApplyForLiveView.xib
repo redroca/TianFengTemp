@@ -42,7 +42,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvS-ER-l6w">
-                    <rect key="frame" x="287" y="223" width="43" height="18"/>
+                    <rect key="frame" x="272" y="223" width="43" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="1" green="0.64313725490196072" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234人浏览" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-I1-KdI">
-                    <rect key="frame" x="287" y="270.5" width="75.5" height="17"/>
+                    <rect key="frame" x="272" y="270.5" width="75.5" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_speaking" translatesAutoresizingMaskIntoConstraints="NO" id="D7l-Ut-ews" userLabel="headerImage1">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D7l-Ut-ews" userLabel="headerImage1">
                     <rect key="frame" x="325" y="320" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="Z1l-Lv-Ksp"/>
@@ -82,6 +82,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <real key="value" value="17.5"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLD-Mh-Vod" userLabel="headerImage2">
@@ -94,6 +95,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <real key="value" value="17.5"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUM-Ya-jJb" userLabel="headerImage3">
@@ -106,6 +108,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <real key="value" value="17.5"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
             </subviews>
@@ -118,7 +121,7 @@
                 <constraint firstItem="yrF-90-395" firstAttribute="trailing" secondItem="Kpc-Ea-5K6" secondAttribute="trailing" constant="125" id="9Yc-6Y-DUj"/>
                 <constraint firstItem="kUM-Ya-jJb" firstAttribute="centerY" secondItem="Bfw-mA-MpS" secondAttribute="centerY" id="BNH-bi-pUB"/>
                 <constraint firstItem="M5J-CM-FBT" firstAttribute="leading" secondItem="yrF-90-395" secondAttribute="leading" constant="15" id="EXY-SA-v3r"/>
-                <constraint firstItem="yrF-90-395" firstAttribute="trailing" secondItem="TvS-ER-l6w" secondAttribute="trailing" constant="45" id="EiA-cb-kVf"/>
+                <constraint firstItem="yrF-90-395" firstAttribute="trailing" secondItem="TvS-ER-l6w" secondAttribute="trailing" constant="60" id="EiA-cb-kVf"/>
                 <constraint firstItem="G6J-zh-rq5" firstAttribute="leading" secondItem="yrF-90-395" secondAttribute="leading" id="Fzn-bP-QSF"/>
                 <constraint firstItem="NcA-Go-kjz" firstAttribute="leading" secondItem="yrF-90-395" secondAttribute="leading" constant="15" id="OMh-hw-BYb"/>
                 <constraint firstItem="Bfw-mA-MpS" firstAttribute="top" secondItem="M5J-CM-FBT" secondAttribute="bottom" constant="25" id="Ptf-Py-Ocw"/>
@@ -142,7 +145,4 @@
             <point key="canvasLocation" x="-422.5" y="-629"/>
         </view>
     </objects>
-    <resources>
-        <image name="button_speaking" width="265" height="35"/>
-    </resources>
 </document>

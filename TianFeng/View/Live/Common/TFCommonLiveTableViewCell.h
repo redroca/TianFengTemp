@@ -7,8 +7,11 @@
 //
 
 #import <M4CoreFoundation/M4CoreFoundation.h>
+typedef void(^ToVedioDetailBlock)(NSInteger index);
 
 @interface TFCommonLiveTableViewCell : CoreXibTableViewCell
+
+@property (nonatomic, copy) ToVedioDetailBlock toVedioDetailBlock;
 
 - (void)configureWithModel:(NSDictionary *)model;
 

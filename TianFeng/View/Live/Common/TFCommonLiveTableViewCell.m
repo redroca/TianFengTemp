@@ -84,7 +84,9 @@
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (self.toVedioDetailBlock) {
+        self.toVedioDetailBlock(indexPath.row);
+    }
 }
 
 @end
