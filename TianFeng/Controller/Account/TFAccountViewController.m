@@ -63,12 +63,6 @@
     self.accountTableView.tableHeaderView = accountHomeHeaderView;
 }
 
-- (void)initBarManager {
-    [TFNavigationBarManager managerWithController:self];
-    [TFNavigationBarManager setBarColor:[UIColor whiteColor]];
-    [TFNavigationBarManager setZeroAlphaOffset:0];
-    [TFNavigationBarManager setFullAlphaOffset:150];
-}
 
 - (void)initDatasource {
     listCount = 0;
@@ -87,7 +81,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableViewHeaderView];
-    [self initBarManager];
     [self initDatasource];
     self.navigationItem.title = @"";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -97,18 +90,12 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:YES];
-    if ([TFNavigationBarManager sharedManager].selfNavigationBar) {
-        [TFNavigationBarManager sharedManager].selfNavigationBar.hidden = NO;
-    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
     [self.navigationController setNavigationBarHidden:NO];
-    if ([TFNavigationBarManager sharedManager].selfNavigationBar) {
-        [TFNavigationBarManager sharedManager].selfNavigationBar.hidden = YES;
-    }
 }
 
 
